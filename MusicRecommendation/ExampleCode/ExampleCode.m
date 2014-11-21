@@ -23,7 +23,7 @@ ht = title('listening counts per user');
 grid on;
 set(gca,'fontsize',10,'fontname','Helvetica','box','off','tickdir','out','ticklength',[.02 .02],'xcolor',0.5*[1 1 1],'ycolor',0.5*[1 1 1]);
 set([hx; hy; ht],'fontsize',18,'fontname','avantgarde','color',[.3 .3 .3]);
-print('-dpng', 'fig1');
+%print('-dpng', 'fig1');
 
 figure(2)
 % plot data
@@ -46,6 +46,6 @@ grid on;
 set(gca,'fontsize',10,'fontname','Helvetica','box','off','tickdir','out','ticklength',[.02 .02],'xcolor',0.5*[1 1 1],'ycolor',0.5*[1 1 1]);
 set([hx; hy; ht],'fontsize',18,'fontname','avantgarde','color',[.3 .3 .3]);
 
-print('-dpng', 'fig2');
+%print('-dpng', 'fig2');
 
 
