@@ -1,3 +1,4 @@
+% Reset a random generator with new seed
 function setSeed(seed)
 % set seed
 	global RNDN_STATE  RND_STATE
