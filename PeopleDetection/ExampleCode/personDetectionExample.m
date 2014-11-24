@@ -13,7 +13,10 @@ clearvars;
 % ---------------------------------------------
 % ====>   FIX TO YOUR ACTUAL TOOLBOX PATH <====
 % ---------------------------------------------
-addpath(genpath('PiotrToolbox/'));
+%addpath(genpath('PiotrToolbox/'));
+addpath(genpath('drtoolbox/'));
+addpath(genpath('TSNE/'));
+addpath(genpath('Parametric t-SNE/'));
     
 % Load both features and training images
 load 'Data/train_feats';
@@ -55,20 +58,59 @@ Te.idxs = 2:2:size(X,1);
 Te.X = X(Te.idxs,:);
 Te.y = labels(Te.idxs);
 
-%% Train simple neural network with matlab's toolbox
-fprintf('Training simple neural network..\n');
-rng(8339);  % fix seed, this    NN is very sensitive to initialization
-net = patternnet([3 3]);
+%% Results based on the t-SNE - just plotting
 
-% train the neural network on the training set
-net = train(net,Tr.X', 1.0*[(Tr.y' > 0); (Tr.y' < 0)]);
+sub = X(1:1000,:);
+lab = labels(1:1000);
+
+% First PCA to reduce to 30 dimensions
+% Then t-SNE to reduce to 2 dimensions
+map = tsne(sub, [], 2, 30);
+
+figure;
+
+plot(map(lab == 1,1), map(lab == 1,2), 'rx');
+hold on;
+plot(map(lab == -1,1), map(lab == -1, 2), 'bo');
+
+%% Train NN with parametric t-SNE
+
+sub = X;
+lab = labels;
+
+% Not truly fair, I am using PCA on the whole train set
+% For the sake of simplicity
+map = compute_mapping(sub, 'PCA', 100);
+
+Tr.X = map(Tr.idxs,:);
+Te.X = map(Te.idxs,:);
+
+perplexity = 30;
+layers = [20 100 2];
+
+[network, err] = train_par_tsne(Tr.X, 1.0*[(Tr.y' > 0); (Tr.y' < 0)],  layers, 'CD1');
 
 % predict on the test set
-nnPred = net(Te.X');
+nnPred = run_data_through_network(network, Te.X);
 
-% just keep the one for the positive class
-nnPred = nnPred(1,:)';
 
+% not sure for now what is happening here
+figure; gscatter(nnPred(:,1), nnPred(:, 2), Te.y' > 0); 
+
+
+%% Train simple neural network with matlab's toolbox
+% fprintf('Training simple neural network..\n');
+% rng(8339);  % fix seed, this    NN is very sensitive to initialization
+% net = patternnet([3 3]);
+% 
+% % train the neural network on the training set
+% net = train(net,Tr.X', 1.0*[(Tr.y' > 0); (Tr.y' < 0)]);
+% 
+% % predict on the test set
+% nnPred = net(Te.X');
+% 
+% % just keep the one for the positive class
+% nnPred = nnPred(1,:)';
 
 %% See prediction performance
 fprintf('Plotting performance..\n');

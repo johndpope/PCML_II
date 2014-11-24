@@ -69,6 +69,7 @@
 clear all;
 clc;
 load 'Data/songTrain.mat'
+
 Gtrain_Copy = Gtrain;
 Ytrain_Copy = Ytrain;
 
@@ -76,28 +77,28 @@ Ytrain_Copy = Ytrain;
 
 % Option 1 - really small: 5 users, 5 items
 
-% Relatively interesting dense subset of users and artists
-Users = [2 3 7 9 11];
-Artists = [153 201 284 980 1079];
-
-G = Gtrain_Copy(Users, Users);
-Y = Ytrain_Copy(Users, Artists);
-% Define train and test data
-Gtrain = G(1:4,1:4);
-Gtrain_test = G(1:4,5);
-Gtest = G(5,5);
-Ytrain = Y(1:4,:);
-Ytest = Y(5,:);
+% % Relatively interesting dense subset of users and artists
+% Users = [2 3 7 9 11];
+% Artists = [153 201 284 980 1079];
+% 
+% G = Gtrain_Copy(Users, Users);
+% Y = Ytrain_Copy(Users, Artists);
+% % Define train and test data
+% Gtrain = G(1:4,1:4);
+% Gtrain_test = G(1:4,5);
+% Gtest = G(5,5);
+% Ytrain = Y(1:4,:);
+% Ytest = Y(5,:);
 
 % Option 2 - somewhat bigger - 120 users, 1000 items
-% G = Gtrain_Copy(1:120,1:120);
-% Y = Ytrain_Copy(1:120,1:1000);
-% % Define train and test data
-% Gtrain = G(1:100, 1:100);
-% Gtrain_test = G(1:100, 101:end);
-% Gtest = G(101:end, 101:end);
-% Ytrain = Y(1:100,:);
-% Ytest = Y(101:end,:);
+G = Gtrain_Copy(1:120,1:120);
+Y = Ytrain_Copy(1:120,1:1000);
+% Define train and test data
+Gtrain = G(1:100, 1:100);
+Gtrain_test = G(1:100, 101:end);
+Gtest = G(101:end, 101:end);
+Ytrain = Y(1:100,:);
+Ytest = Y(101:end,:);
 
 
 % Option 3 - whole dataset, although it takes about 30-40 minutes to run
@@ -114,9 +115,10 @@ Ytest = Y(5,:);
 % ---------------------------------------------------------
 % additionally 
 % Make smaller listener counts - for the sake of simplicity
-Y = mod(Y, 17);
-Ytrain = mod(Ytrain, 17);
-Ytest = mod(Ytest, 17);
+
+% Y = mod(Y, 17);
+% Ytrain = mod(Ytrain, 17);
+% Ytest = mod(Ytest, 17);
 
 % Visualize sparcity patterns
 figure;
@@ -142,8 +144,9 @@ maxValue = 16;
 % With hyperparameter optimization
 
 % Optimizing model parameters
-P_values = 0:0.1:1;
-maxValues = 10:20;
+% P_values = 0:0.1:1;
+P_values = 0;
+maxValues = 800:20:1000;
 [TrainPredicted, TestPredicted, best_P, best_MV, ...
     expectedTrainError, expectedTestError,...
     TrainError, TestError] = Random_Optimize_Strong(...

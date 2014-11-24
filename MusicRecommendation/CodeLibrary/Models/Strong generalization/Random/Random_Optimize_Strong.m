@@ -46,6 +46,8 @@ function [ TrainPredicted, TestPredicted,...
     ...             % 
     Gtrain_test,... % Matrix of user relations between train and test set
     ...             %
+    Gtest_train,... % Matrix of user relations between test and train set
+    ...             %
     Gtest,...       % Matrix of user relations in test set
     ...             %
     varargin...     % Additional arguments to be passed
@@ -136,7 +138,7 @@ function [ TrainPredicted, TestPredicted,...
     % parameters, that are passed through the varargin but not defined 
     % here, probably something is wrong.
     [TrainPredicted, TestPredicted] = Random_TrainAndPredict_Strong(...
-        Gtrain, Ytrain, Gtrain_test, Gtest,...
+        Gtrain, Ytrain, Gtrain_test, Gtest_train, Gtest,...
         'Alg_P', best_P, 'Alg_maxValue', best_MV);
 end
 
