@@ -90,15 +90,15 @@ Ytrain_Copy = Ytrain;
 % Ytrain = Y(1:4,:);
 % Ytest = Y(5,:);
 
-% Option 2 - somewhat bigger - 120 users, 1000 items
-G = Gtrain_Copy(1:120,1:120);
-Y = Ytrain_Copy(1:120,1:1000);
+% Option 2 - somewhat bigger - 1200 users, all items
+G = Gtrain_Copy(1:1200,1:1200);
+Y = Ytrain_Copy(1:1200,:);
 % Define train and test data
-Gtrain = G(1:100, 1:100);
-Gtrain_test = G(1:100, 101:end);
-Gtest = G(101:end, 101:end);
-Ytrain = Y(1:100,:);
-Ytest = Y(101:end,:);
+Gtrain = G(1:1000, 1:1000);
+Gtrain_test = G(1:1000, 1001:end);
+Gtest = G(1001:end, 1001:end);
+Ytrain = Y(1:1000,:);
+Ytest = Y(1001:end,:);
 
 
 % Option 3 - whole dataset, although it takes about 30-40 minutes to run
@@ -186,3 +186,69 @@ maxValues = 10:20;
     'Opt_CV_k', 4, 'Opt_CV_seed', 1,...
     ... % Other parameters to opt
     'Opt_verbose', 1);
+
+%% Learning curve
+% TODO: 
+% 1. Check that same optimal point holds true for other algs
+% 2. Check with bigger dataset
+% QUESTION:
+% Different algorithms have different learning curves
+% See for example Constant and ConstantPerArtist
+% What should be the optimal size?
+P = 0.1:0.1:0.9;
+TrE = zeros(length(P), 1);
+TeE = zeros(length(P), 1);
+for idx=1:length(P)
+    fprintf('%d\n', P(idx));
+    [TrainError, TestError] = crossValidation_Strong(...
+        ... % Only training data is provided
+        G, Y,...
+        ... % Function to be called
+        @Constant_TrainAndPredict_Strong,...
+        ... % CV parameters
+        'CV_type', 'Split', 'CV_k', 200, 'CV_p', P(idx),...
+        'CV_seed', 1, 'CV_verbose', 0);
+    TrE(idx) = mean(TrainError);
+    TeE(idx) = mean(TestError);
+end
+
+figure;
+plot(P, TrE, '.b');
+hold on;
+line(P, TrE);
+hold on;
+plot(P, TeE, '.r');
+hold on;
+line(P, TeE);
+
+
+%% Cross-validating random with near-optimal parameter maxValue 900
+[TrainError, TestError] = crossValidation_Strong(...
+    ... % Only training data is provided
+    G, Y,...
+    ... % Function to be called
+    @Random_TrainAndPredict_Strong,...
+    ... % CV parameters
+    'CV_type', 'Split', 'CV_k', 100, 'CV_p', 0.7,...
+    'CV_seed', 1, 'CV_verbose', 2,...
+    'Alg_P', 0, 'Alg_maxValue', 900);
+
+%% Cross-validating the constant algorithm
+[TrainError, TestError] = crossValidation_Strong(...
+    ... % Only training data is provided
+    G, Y,...
+    ... % Function to be called
+    @Constant_TrainAndPredict_Strong,...
+    ... % CV parameters
+    'CV_type', 'Split', 'CV_k', 100, 'CV_p', 0.7,...
+    'CV_seed', 1, 'CV_verbose', 2);
+
+%% Cross-validating the constantPerArtist algorithm
+[TrainError, TestError] = crossValidation_Strong(...
+    ... % Only training data is provided
+    G, Y,...
+    ... % Function to be called
+    @ConstantPerArtist_TrainAndPredict_Strong,...
+    ... % CV parameters
+    'CV_type', 'Split', 'CV_k', 100, 'CV_p', 0.7,...
+    'CV_seed', 1, 'CV_verbose', 2);
