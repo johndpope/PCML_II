@@ -144,8 +144,10 @@ function [ TrainError, TestError ] = crossValidation_Strong( ...
         end 
     end
     if (verbose > 0)
-        fprintf('Predicted test error  = %0.4f\n', mean(TestError));
-        fprintf('Predicted train error = %0.4f\n', mean(TrainError));
+        fprintf('Predicted test error  = %0.4f ~ %0.4f SD\n',...
+            mean(TestError), std(TestError));
+        fprintf('Predicted train error = %0.4f ~ %0.4f SD\n',...
+            mean(TrainError), std(TrainError));
     end
 end
 
