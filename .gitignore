@@ -3,3 +3,6 @@ PeopleDetection/PiotrToolbox/
 *.html
 *~
 *.class
+MusicRecommendation/Mahout/*/target/*
+*.classpath
+*.dat
