@@ -117,9 +117,9 @@ public class ALSTest {
 			
 			rec = new SimpleFactorization();
 			HashMap<String, Object> parameters = new HashMap<String, Object>();
-			parameters.put("numOfFeatures", numOfFeatures);
-			parameters.put("numOfIterations", NUMBER_OF_ITERATIONS);
-			parameters.put("lambda", lambdas[i]);
+			parameters.put("numOfFeatures", Integer.valueOf(numOfFeatures).toString());
+			parameters.put("numOfIterations", Integer.valueOf(NUMBER_OF_ITERATIONS).toString());
+			parameters.put("lambda", Double.valueOf(lambdas[i]).toString());
 			rec.setParameters(parameters);
 			
 			for (k=1;k<=K;k++) {
@@ -156,6 +156,20 @@ public class ALSTest {
 		return entry;
 	}
 	
+	
+	static ArrayList<MyPair> randomize(ArrayList<MyPair> originalPairs, Random r) {
+		int i,j,k;
+		int N = originalPairs.size();
+		
+		ArrayList<MyPair> randomizedPairs = new ArrayList<MyPair>();
+		
+		while (!originalPairs.isEmpty()) {
+			randomizedPairs.add(originalPairs.remove(r.nextInt(originalPairs.size())));
+		}
+		
+		return randomizedPairs;
+	}
+	
 	static long parseLong(String s) {
 		long num = 0;
 		if (s.contains("e")) {
@@ -169,19 +183,6 @@ public class ALSTest {
 			num = Long.parseLong(s);
 		}
 		return num;
-	}
-	
-	static ArrayList<MyPair> randomize(ArrayList<MyPair> originalPairs, Random r) {
-		int i,j,k;
-		int N = originalPairs.size();
-		
-		ArrayList<MyPair> randomizedPairs = new ArrayList<MyPair>();
-		
-		while (!originalPairs.isEmpty()) {
-			randomizedPairs.add(originalPairs.remove(r.nextInt(originalPairs.size())));
-		}
-		
-		return randomizedPairs;
 	}
 	
 	// we select k-th of total number of equal parts, ex. 1 of 4, 2 of 4, 3 of 4, 4 of 4

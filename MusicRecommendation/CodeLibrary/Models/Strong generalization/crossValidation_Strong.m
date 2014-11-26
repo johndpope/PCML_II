@@ -85,31 +85,36 @@ function [ TrainError, TestError ] = crossValidation_Strong( ...
         end
     end
 
-    N = size(Ytrain, 1); % # of users
+    ne_idx = find(full(sum(Ytrain, 2)) > 0);
+    NE = length(ne_idx);
+    
+    N = size(Ytrain, 1);
+    M = size(Ytrain, 2);
+    
     setSeed(seed);
     
     % Makes a train_test split based on the parameters passed
     if (strcmp(CV_type, 'CV')) 
-        TrainIdx = false(K, N);
-        TestIdx = false(K, N);
-        perm = randperm(N);
-        idx = zeros(N, 1);
-        nk = floor(N / K);
+        nk = floor(NE / K);
+        TrainIdx = zeros(K, NE - nk);
+        TestIdx = zeros(K, nk);
+        perm = randperm(NE);
+        idx = zeros(NE, 1);
         for i = 1:K
             idx(perm(((i - 1) * nk + 1):(i * nk))) = i;
         end
         for i = 1:K
-            TrainIdx(i,:) = (idx ~= i);
-            TestIdx(i,:) = (idx == i);
+            TrainIdx(i,:) = ne_idx((idx ~= i));
+            TestIdx(i,:) = ne_idx((idx == i));
         end
     elseif (strcmp(CV_type, 'Split'))
-        trainPart = floor(N * P);
+        trainPart = floor(NE * P);
         TrainIdx = zeros(K, trainPart);
-        TestIdx = zeros(K, N - trainPart);
+        TestIdx = zeros(K, NE - trainPart);
         for i = 1:K
-            perm = randperm(N);
-            TrainIdx(i,:) = perm(1:trainPart);
-            TestIdx(i,:) = perm((trainPart+1):end);
+            perm = randperm(NE);
+            TrainIdx(i,:) = ne_idx(perm(1:trainPart));
+            TestIdx(i,:) = ne_idx(perm((trainPart+1):end));
         end
     else
         print 'ERROR - wrong CV type';
@@ -123,20 +128,24 @@ function [ TrainError, TestError ] = crossValidation_Strong( ...
     for foldIdx = 1:K
         % Calling TrainAndPredict function, extracting first 2 parameters
         % We pass same varagin that we received here to the function
+        TrI = TrainIdx(foldIdx,:);
+        TeI = TestIdx(foldIdx,:);
+       
+        G_tr = sparse(N, N);  G_tr(TrI, TrI) = Gtrain(TrI, TrI);
+        G_tr_te = sparse(N, N); G_tr_te(TrI, TeI) = Gtrain(TrI, TeI);
+        G_te_tr = sparse(N, N); G_te_tr(TeI, TrI) = Gtrain(TeI, TrI);
+        G_te = sparse(N, N); G_te(TeI, TeI) = Gtrain(TeI, TeI);
+        Y_tr = sparse(N, M); Y_tr(TrI, :) = Ytrain(TrI,:);
+        Y_te = sparse(N, M); Y_te(TeI, :) = Ytrain(TeI,:);
+        
         [TrainPredicted, TestPredicted] = ...
             TrainAndPredictFunction(...
-            Gtrain(TrainIdx(foldIdx,:), TrainIdx(foldIdx,:)),...
-            Ytrain(TrainIdx(foldIdx,:),:),...
-            Gtrain(TrainIdx(foldIdx,:), TestIdx(foldIdx,:)),...
-            Gtrain(TestIdx(foldIdx,:), TrainIdx(foldIdx,:)),...
-            Gtrain(TestIdx(foldIdx,:), TestIdx(foldIdx,:)),...
+            G_tr, Y_tr, G_tr_te, G_te_tr, G_te, Y_te,...
             varargin);
         % Compute RMSE. 
         % !!! - See note in RMSE function
-         TrainError(foldIdx) = RMSE(TrainPredicted, ...
-                                    Ytrain(TrainIdx(foldIdx,:),:));
-         TestError(foldIdx) = RMSE(TestPredicted, ...
-                                   Ytrain(TestIdx(foldIdx,:),:));
+         TrainError(foldIdx) = RMSE(TrainPredicted, Y_tr);
+         TestError(foldIdx) = RMSE(TestPredicted, Y_te);
          if (verbose > 1)
             fprintf('Fold  | Train Error  |  Test Error\n');
             fprintf('%03d   |    %0.4f     |    %0.4f\n\n',...

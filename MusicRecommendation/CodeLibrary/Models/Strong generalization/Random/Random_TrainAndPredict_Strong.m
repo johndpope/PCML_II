@@ -37,6 +37,8 @@ function [ TrainPredicted, TestPredicted ] = ...
     ...             %
     Gtest,...       % Matrix of user relations in test set
     ...             %
+    Ytest,...       % Indices, for which we are insterested in answer
+    ...             %
     varargin...     %
 )
     % First, extract all necessary parameters from varargin

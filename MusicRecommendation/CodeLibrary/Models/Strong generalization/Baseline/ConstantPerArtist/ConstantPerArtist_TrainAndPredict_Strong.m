@@ -10,15 +10,26 @@ function [ TrainPredicted, TestPredicted ] = ...
     ...             %
     Gtest,...       % Matrix of user relations in test set
     ...             %
+    Ytest,...       % Indices, for which we are insterested in answer
+    ...             %
     varargin...     %
 )
        
     meanY = full(mean(Ytrain));
     sumB = full(sum(boolean(Ytrain)));
-    
+    % This is now mean for every artist
     meanY(sumB > 0) = meanY(sumB > 0) * size(Gtrain, 1) ./ sumB(sumB > 0);
     
-    TrainPredicted = repmat(meanY, size(Gtrain, 1), 1);
-    TestPredicted = repmat(meanY, size(Gtest, 1), 1);
+    % A now keeps the index of artist for each non-zero position
+    [U, A] = ind2sub(size(Ytrain), find(Ytrain(:) > 0));
+    TrainPredicted = sparse(size(Ytrain, 1), size(Ytrain, 2));
+    % Now fill each non-zero value with the mean for the appropriate artist
+    TrainPredicted(Ytrain(:) > 0) = meanY(A);
+    
+    % Same for test
+    [U, A] = ind2sub(size(Ytest), find(Ytest(:) > 0));
+    TestPredicted = sparse(size(Ytest, 1), size(Ytest, 2));
+    TestPredicted(Ytest(:) > 0) = meanY(A);
+    
 end
 

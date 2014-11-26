@@ -1,5 +1,5 @@
 function [ TrainPredicted, TestPredicted ] = ...
-    Constant_TrainAndPredict_Strong(...
+    Constant_Java_TrainAndPredict_Strong(...
     Gtrain,...      % Matrix of user relations in train set
     ...             %
     Ytrain,...      % Matrix of user - artist listen counts in train    
@@ -14,11 +14,11 @@ function [ TrainPredicted, TestPredicted ] = ...
     ...             %
     varargin...     %
 )
-       
-    meanVal = mean(mean(Ytrain(Ytrain > 0)));
-    TrainPredicted = Ytrain;
-    TrainPredicted(TrainPredicted > 0) = meanVal;
-    TestPredicted  = Ytest;
-    TestPredicted(TestPredicted > 0) = meanVal;
+    % See parameters to JavaMatlabLink function for clarification
+    
+    TrainPredicted = JavaMatlabLink(Ytrain, Ytrain,...
+        'train.dat', 'test.dat', 'GlobalAverage');
+    TestPredicted = JavaMatlabLink(Ytrain, Ytest,...
+        'train.dat', 'test.dat', 'GlobalAverage');
 end
 

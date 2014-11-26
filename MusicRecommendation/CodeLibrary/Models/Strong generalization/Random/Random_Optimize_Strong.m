@@ -50,6 +50,8 @@ function [ TrainPredicted, TestPredicted,...
     ...             %
     Gtest,...       % Matrix of user relations in test set
     ...             %
+    Ytest,...       % Indices, for which we are insterested in answer
+    ...             %
     varargin...     % Additional arguments to be passed
 )
     % First, extract all necessary parameters from varargin

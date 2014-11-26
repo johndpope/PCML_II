@@ -131,9 +131,9 @@ public class SimpleFactorization implements RecSystemInterface {
 	}
 
 	public void setParameters(Map<String, Object> parameters) {
-		numOfFeatures = (Integer)parameters.get("numOfFeatures");
-		lambda = (Double)parameters.get("lambda");
-		numOfIterations = (Integer)parameters.get("numOfIterations");
+		numOfFeatures = Integer.parseInt((String)parameters.get("numOfFeatures"));
+		lambda = Double.parseDouble((String)parameters.get("lambda"));
+		numOfIterations = Integer.parseInt((String)parameters.get("numOfIterations"));
 	}
 
 	public void printModel() {

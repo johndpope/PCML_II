@@ -27,7 +27,6 @@ public class PerArtistAverage implements RecSystemInterface {
 			sumPerArtist.put(pair.itemID, sumPerArtist.get(pair.itemID) + pair.value);
 			countPerArtist.put(pair.itemID, countPerArtist.get(pair.itemID) + 1);
 		}
-		
 	}
 	
 	public void setParameters(Map<String, Object> parameters) {
@@ -40,14 +39,11 @@ public class PerArtistAverage implements RecSystemInterface {
 		ArrayList<MyPair> results = new ArrayList<MyPair>();
 		while (it.hasNext()) {
 			MyPair pair = new MyPair(it.next());
-			
-			double predictedValue = 0;
 			if (sumPerArtist.containsKey(pair.itemID)) {
-				predictedValue = sumPerArtist.get(pair.itemID) / countPerArtist.get(pair.itemID);
+				double predictedValue = sumPerArtist.get(pair.itemID) / countPerArtist.get(pair.itemID);
+				pair.value = predictedValue;
+				results.add(pair);
 			}
-			
-			pair.value = predictedValue;
-			results.add(pair);
 		}
 		return results;
 	}
