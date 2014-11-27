@@ -122,7 +122,6 @@ spy(Y_tr(UsersTr, Artists));
 p = 0.1;
 maxValue = 16;
 
-
 [TrainPredicted, TestPredicted] = Random_TrainAndPredict_Strong(...
     ... % Train and test parameters
     G_tr, Y_tr, G_tr_te, G_te_tr, G_te, Y_te,...
@@ -156,7 +155,9 @@ for P_idx = 1:length(P_values)
 end
 
 %% Cross-validating the whole algorithm
-% Here for the sake of speed for larger datasets
+
+% For STRONG
+
 P_values = 0;
 maxValues = 950:10:1050;
 [TrainError, TestError] = crossValidation_Strong(...
@@ -166,6 +167,27 @@ maxValues = 950:10:1050;
     @Random_Optimize_Strong,...
     ... % CV parameters
     'CV_type', 'CV', 'CV_k', 5,'CV_seed', 1, 'CV_verbose', 2,...
+    ... % Hyperparameters to optimize
+    'Opt_P_values', P_values, 'Opt_maxValues', maxValues,...
+    ... % parameters to be used for CV inside of optimize
+    ... % They are parsed in Optimize and added to the parameters
+    ... % Passed to the CV by different name (with CV_ prefix)
+    ... % Purpose of such approach: avoid naming conflict
+    'Opt_CV_k', 4, 'Opt_CV_seed', 1,...
+    ... % Other parameters to opt
+    'Opt_verbose', 1);
+
+% For WEAK
+
+P_values = 0;
+maxValues = 950:10:1050;
+[TrainError, TestError] = crossValidation_Weak(...
+    ... % Only training data is provided
+    G, Y,...
+    ... % Function to be called
+    @Random_Optimize_Strong,...
+    ... % CV parameters
+    'CV_k', 5, 'CV_l', 10, 'CV_seed', 1, 'CV_verbose', 2,...
     ... % Hyperparameters to optimize
     'Opt_P_values', P_values, 'Opt_maxValues', maxValues,...
     ... % parameters to be used for CV inside of optimize
@@ -236,6 +258,33 @@ hold on;
 plot(P, TeE, '.r');
 hold on;
 line(P, TeE);
+
+%% Learning curve for weak generalization
+L = 1:2:25;
+TrE = zeros(length(L), 1);
+TeE = zeros(length(L), 1);
+for idx=1:length(L)
+    fprintf('%d\n', L(idx));
+    [TrainError, TestError] = crossValidation_Weak(...
+        ... % Only training data is provided
+        G, Y,...
+        ... % Function to be called
+        @Constant_TrainAndPredict_Strong,...
+        ... % CV parameters
+        'CV_k', 100, 'CV_l', L(idx),...
+        'CV_seed', 1, 'CV_verbose', 0);
+    TrE(idx) = mean(TrainError);
+    TeE(idx) = mean(TestError);
+end
+
+figure;
+plot(L, TrE, '.b');
+hold on;
+line(L, TrE);
+hold on;
+plot(L, TeE, '.r');
+hold on;
+line(L, TeE);
 
 
 %% Cross-validating random with near-optimal parameter maxValue 900
