@@ -32,14 +32,14 @@ public class SimpleFactorization implements RecSystemInterface {
 	private HashMap<Integer, Long> hmUsersMappedToOriginal;
 	
 	static DataModel getDataModel(ArrayList<MyPair> pairs) throws Exception {			
-			PrintWriter out = new PrintWriter(new File("data/dummy.dat"));
+			PrintWriter out = new PrintWriter(new File("dummy.dat"));
 			Iterator<MyPair> it = pairs.iterator();
 			while (it.hasNext()) {
 				MyPair current = it.next();
 				out.println(current.userID+","+current.itemID+","+current.value);
 			}
 			out.close();
-			return new FileDataModel(new File("data/dummy.dat"));
+			return new FileDataModel(new File("dummy.dat"));
 		}
 	
 	

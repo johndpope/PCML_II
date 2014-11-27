@@ -55,18 +55,20 @@ function [ TrainPredicted, TestPredicted ] = ...
     % Define weights - P for 0, uniformly distributed for all other values
     Weights = [P repmat((1 - P) / maxValue, 1, maxValue)];
     setSeed(1);
-    N = size(Ytrain, 1);
-    M = size(Ytrain, 2);
-    K = size(Gtest, 1);
-    
+   
     % Use the trained model on the train and test set
     % Output should be matrixes
     % For normal algorithms they probably should be sparse
     % Matlab seamlessly operates with sparse and normal matrixes
     % So that doesn't make a difference
-    TrainPredicted = reshape(...
-        randsample(Population, N * M, true, Weights), N, M);
-    TestPredicted = reshape(...
-        randsample(Population, K * M, true, Weights), K, M);
+    TrainPredicted = Ytrain;
+    TrainPredicted(TrainPredicted > 0) =...
+        randsample(Population, sum(TrainPredicted(:) > 0),...
+        true, Weights);
+    
+    TestPredicted = Ytest;
+    TestPredicted(TestPredicted > 0) =...
+        randsample(Population, sum(TestPredicted(:) > 0),...
+        true, Weights);
 end
 

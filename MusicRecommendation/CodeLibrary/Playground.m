@@ -75,57 +75,46 @@ Ytrain_Copy = Ytrain;
 
 %% dataset selection
 
-% Option 1 - really small: 5 users, 5 items
-
 % % Relatively interesting dense subset of users and artists
-% Users = [2 3 7 9 11];
+% UsersTr = [2 3 9 11]; UsersTe = [29];
 % Artists = [153 201 284 980 1079];
 % 
-% G = Gtrain_Copy(Users, Users);
-% Y = Ytrain_Copy(Users, Artists);
-% % Define train and test data
-% Gtrain = G(1:4,1:4);
-% Gtrain_test = G(1:4,5);
-% Gtest = G(5,5);
-% Ytrain = Y(1:4,:);
-% Ytest = Y(5,:);
+% Somewhat bigger option
+ UsersTr = 1:500; UsersTe = 501:700;
+ Artists = 1:size(Ytrain, 2);
+%
+% Whole dataset
+% UsersTr = 1:1500; UsersTe = 1501:size(Gtrain, 1);
+% % Artists = 1:size(Ytrain, 2);
 
-% Option 2 - somewhat bigger - 1200 users, all items
-G = Gtrain_Copy(1:1200,1:1200);
-Y = Ytrain_Copy(1:1200,:);
-% Define train and test data
-Gtrain = G(1:1000, 1:1000);
-Gtrain_test = G(1:1000, 1001:end);
-Gtest = G(1001:end, 1001:end);
-Ytrain = Y(1:1000,:);
-Ytest = Y(1001:end,:);
+% Always create matrixes of full size
+N = size(Ytrain, 1);
+M = size(Ytrain, 2);
 
+G_tr = sparse(N, N);
+G_tr_te = sparse(N, N);
+G_te_tr = sparse(N, N);
+G_te = sparse(N, N);
+Y_tr = sparse(N, M);
+Y_te = sparse(N, M);
 
-% Option 3 - whole dataset, although it takes about 30-40 minutes to run
-% G = Gtrain_Copy;
-% Y = Ytrain_Copy;
-% % Define train and test data
-% Gtrain = G(1:1500, 1:1500);
-% Gtrain_test = G(1:1500, 1501:end);
-% Gtest = G(1501:end, 1501:end);
-% Ytrain = Y(1:1500,:);
-% Ytest = Y(1501:end,:);
+% Fill in only necessary info
+G_tr(UsersTr, UsersTr) = Gtrain(UsersTr, UsersTr);
+G_tr_te(UsersTr, UsersTe) = Gtrain(UsersTr, UsersTe);
+G_te_tr(UsersTe, UsersTr) = Gtrain(UsersTe, UsersTr);
+G_te(UsersTe, UsersTe) = Gtrain(UsersTe, UsersTe);
+Y_tr(UsersTr, Artists) = Ytrain(UsersTr, Artists);
+Y_te(UsersTe, Artists) = Ytrain(UsersTe, Artists);
 
+G = G_tr + G_tr_te + G_te_tr + G_te;
+Y = Y_tr + Y_te;
 
-% ---------------------------------------------------------
-% additionally 
-% Make smaller listener counts - for the sake of simplicity
-
-% Y = mod(Y, 17);
-% Ytrain = mod(Ytrain, 17);
-% Ytest = mod(Ytest, 17);
-
-% Visualize sparcity patterns
+% Visualize sparcity patterns in train
 figure;
 a = subplot(2, 1, 1);
-spy(G);
+spy(G_tr(UsersTr, UsersTr));
 b = subplot(2, 1, 2);
-spy(Y);
+spy(Y_tr(UsersTr, Artists));
 
 %% Simple algorithm call example
 
@@ -136,7 +125,7 @@ maxValue = 16;
 
 [TrainPredicted, TestPredicted] = Random_TrainAndPredict_Strong(...
     ... % Train and test parameters
-    Gtrain, Ytrain, Gtrain_test, Gtest,...
+    G_tr, Y_tr, G_tr_te, G_te_tr, G_te, Y_te,...
     ... % algorithm hyperparameters
     'Alg_P', p, 'Alg_maxValue', maxValue);
 
@@ -146,16 +135,16 @@ maxValue = 16;
 % Optimizing model parameters
 % P_values = 0:0.1:1;
 P_values = 0;
-maxValues = 800:20:1000;
+maxValues = 800:20:1500;
 [TrainPredicted, TestPredicted, best_P, best_MV, ...
     expectedTrainError, expectedTestError,...
     TrainError, TestError] = Random_Optimize_Strong(...
     ... % Train and test parameters
-    Gtrain, Ytrain,Gtrain_test, Gtest, ...,
+    G_tr, Y_tr, G_tr_te, G_te_tr, G_te, Y_te,...
     ... % Hyperparameters to be optimized
     'Opt_P_values', P_values, 'Opt_maxValues', maxValues,...
     ... % Hyperparameters passed to CV from Optimize
-    'Opt_CV_k', 4, 'Opt_CV_seed', 1,...
+    'Opt_CV_k', 10, 'Opt_CV_seed', 1,...
     ... % Other parameters to Opt
     'Opt_verbose', 2);
 
@@ -169,7 +158,7 @@ end
 %% Cross-validating the whole algorithm
 % Here for the sake of speed for larger datasets
 P_values = 0;
-maxValues = 10:20;
+maxValues = 950:10:1050;
 [TrainError, TestError] = crossValidation_Strong(...
     ... % Only training data is provided
     G, Y,...
@@ -205,6 +194,33 @@ for idx=1:length(P)
         G, Y,...
         ... % Function to be called
         @Constant_TrainAndPredict_Strong,...
+        ... % CV parameters
+        'CV_type', 'Split', 'CV_k', 200, 'CV_p', P(idx),...
+        'CV_seed', 1, 'CV_verbose', 0);
+    TrE(idx) = mean(TrainError);
+    TeE(idx) = mean(TestError);
+end
+
+figure;
+plot(P, TrE, '.b');
+hold on;
+line(P, TrE);
+hold on;
+plot(P, TeE, '.r');
+hold on;
+line(P, TeE);
+
+%% Learning curve for PerArtist
+P = 0.1:0.1:0.9;
+TrE = zeros(length(P), 1);
+TeE = zeros(length(P), 1);
+for idx=1:length(P)
+    fprintf('%d\n', P(idx));
+    [TrainError, TestError] = crossValidation_Strong(...
+        ... % Only training data is provided
+        G, Y,...
+        ... % Function to be called
+        @ConstantPerArtist_TrainAndPredict_Strong,...
         ... % CV parameters
         'CV_type', 'Split', 'CV_k', 200, 'CV_p', P(idx),...
         'CV_seed', 1, 'CV_verbose', 0);

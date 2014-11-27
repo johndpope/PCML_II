@@ -7,7 +7,7 @@ N = size(Ytrain, 1);
 K = size(Ytrain, 2);
 
 tN = 200;
-tM = 220;
+tM = 300;
 
 Y_tr = sparse(N, K);
 Y_te = sparse(N, K);
@@ -71,3 +71,13 @@ disp([mean(TestPredicted1(TestPredicted1 > 0))...
   G_tr, Y_tr, @ConstantPerArtist_TrainAndPredict_Strong, ...
   'CV_type', 'CV', 'CV_k', 10, 'CV_verbose', 1);
 
+%% Calling simple factorization
+% Here we can only call for same input as output
+% Because we don't have latent vectors for new users
+% And are therefore unable to make prediction
+[TrainPredicted1, TestPredicted1] =...
+    SimpleFactorization_Java_TrainAndPredict(...
+    G_tr, Y_tr, G_tr_te, G_te_tr, G_te, Y_tr,...
+    'Alg_numOfFeatures', 20, 'Alg_numOfIterations', 10, 'Alg_lambda', 750);
+
+disp(mean(TrainPredicted1(TrainPredicted1 > 0)));
