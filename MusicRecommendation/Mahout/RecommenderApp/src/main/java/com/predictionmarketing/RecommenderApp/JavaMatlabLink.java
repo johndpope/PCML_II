@@ -18,7 +18,7 @@ import com.predictionmarketing.RecommenderApp.RecSystems.GlobalAverage;
 import com.predictionmarketing.RecommenderApp.RecSystems.PerArtistAverage;
 import com.predictionmarketing.RecommenderApp.RecSystems.RecSystemInterface;
 import com.predictionmarketing.RecommenderApp.RecSystems.SimpleFactorization;
-import com.sun.org.apache.xalan.internal.xsltc.dom.LoadDocument;
+import com.predictionmarketing.RecommenderApp.RecSystems.SimpleNeighborhood;
 
 public class JavaMatlabLink {
 
@@ -30,9 +30,9 @@ public class JavaMatlabLink {
 	
 	public static void main(String[] args) throws IOException {
 		
-//		trainDataFile = "data/pairs.dat";
-//		algorithmName = "GlobalAverage";
-//		testDataFile = trainDataFile;
+//		trainDataFile = "data/train.dat";
+//		algorithmName = "kNN";
+//		testDataFile = "data/test.dat";
 //		outputFile = "data/output.txt";
 		
 		trainDataFile = args[0];
@@ -54,11 +54,17 @@ public class JavaMatlabLink {
 		if (algorithmName.equals("SimpleFactorization")) {
 			rec = new SimpleFactorization();
 		}
+		if (algorithmName.equals("kNN")) {
+			rec = new SimpleNeighborhood();
+		}
 		
 		parameters = new HashMap<String, Object>();
 		for(int idx = 4; idx < args.length; idx += 2) {
 			parameters.put(args[idx], args[idx + 1]);
 		}
+		
+//		parameters.put("N", "200");
+		
 		rec.setParameters(parameters);
 		
 		rec.Train(trainPairs);
