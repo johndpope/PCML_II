@@ -75,7 +75,7 @@ for i=1:numOfUsers
 end
 
 numOfRatingsPerUser = zeros(numOfUsers, 1);
-numOfRatingsPerItem = zeros(numOfUsers, 1);
+numOfRatingsPerItem = zeros(numOfItems, 1);
 
 for i=1:numOfUsers
     numOfRatingsPerUser(i) = sum(I(i, :));
