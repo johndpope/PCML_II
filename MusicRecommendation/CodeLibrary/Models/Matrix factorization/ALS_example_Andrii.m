@@ -28,22 +28,30 @@ RND_STATE = rand('state');
 rand('twister',seed);
 
 % Matrix generation
-realU = randn(realK, N) + 2;
-realM = randn(realK, D) + 2;
-realR = realU' * realM;
+ realU = randn(realK, N) + 2;
+ realM = randn(realK, D) + 2;
+ realR = realU' * realM;
 
 % Selecting sparse submatrix
-while(true)
-    R = realR;
-    for i=1:N
-        idx = randperm(D);
-        R(i,idx(1:S)) = 0;
-    end
-    % Ensuring that all rows and columns are non-empty
-    if (min(sum(R > 0, 1)) > 0 && min(sum(R > 0, 2)) > 0)
-        break;
-    end
-end
+ while(true)
+     R = realR;
+     for i=1:N
+         idx = randperm(D);
+         R(i,idx(1:S)) = 0;
+     end
+     % Ensuring that all rows and columns are non-empty
+     if (min(sum(R > 0, 1)) > 0 && min(sum(R > 0, 2)) > 0)
+         break;
+     end
+ end
+
+ %%
+ G_tr = 0;
+ ALS_TrainAndPredict(G_tr, R, G_tr, G_tr, G_tr, R,...
+     'Alg_numOfIterations', 10,...
+    'Alg_numOfFeatures', 10,...
+    'Alg_lambda', 750);
+
 
 %% run
 tic;

@@ -63,7 +63,7 @@ public class JavaMatlabLink {
 			parameters.put(args[idx], args[idx + 1]);
 		}
 		
-//		parameters.put("N", "200");
+//		parameters.put("N", "2");
 		
 		rec.setParameters(parameters);
 		
