@@ -1,25 +1,19 @@
-function [ Ytest, Ytrain ] = ratingTransform(Ytest, Ytrain)
-    if (~isempty(Ytest)) 
-        if (nargin < 2) 
-            Ytrain = Ytest;
-        end
-
-        tmp = Ytrain;
-        tmp = sort(tmp);
-        totSum = sum(tmp);
-
-        [Ytest, I] = sort(Ytest);
-        j = 1;
-        curSum = 0;
-        for i=1:length(Ytest)
-            while(j <= length(tmp) && tmp(j) <= Ytest(i)) 
-                curSum = curSum + tmp(j);
-                j = j + 1;
-            end
-            Ytest(i) = curSum / totSum;
-        end
-        Ytest = Ytest(I);
+function [ Ytest ] = ratingTransform(Ytest, vals)
+    vals = sort([0 vals +1e+9]);
+    [Ytest, order_rev] = sort(Ytest);
+    order = order_rev;
+    order(order_rev) = 1:length(order_rev);
+    ptr = 1;
+    trans = cumsum(vals) / sum(vals);
+    
+    for i=1:length(Ytest)
+       while(ptr <= length(vals) && vals(ptr) <= Ytest(i)) 
+           ptr = ptr + 1;
+       end
+       dleft = Ytest(i) - vals(ptr - 1);
+       dright = vals(ptr) - Ytest(i);
+       Ytest(i) = (trans(ptr - 1) * dright + trans(ptr) * dleft) / (dleft + dright);
     end
-    Ytest = sqrt(Ytest);
+    Ytest = Ytest(order);
 end
 

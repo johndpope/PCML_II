@@ -1,27 +1,27 @@
- function [ Ytest ] = DeratingTransform(Ytest, Ytrain)
+ function [ Ytest ] = DeratingTransform(Ytest, vals)
     if (~isempty(Ytest)) 
-        Ytest = Ytest .* Ytest;
-        [Ytest, I] = sort(Ytest);
-        j = 1;
-
-        origVals = ratingTransform(Ytrain, Ytrain);
-        Ytrain = sort(Ytrain);
-
+        vals = sort([0 vals +1e+9]);
+        Ytest(find(Ytest < 0)) = 0;
+        Ytest(find(Ytest > 1)) = 1;
+        [Ytest, order_rev] = sort(Ytest);
+        order = order_rev;
+        order(order_rev) = 1:length(order_rev);
+        
+        ptr = 1;
+        sumTot = sum(vals);
+        sumCum = 0;
+        trans = cumsum(vals) / sum(vals);
+        
         for i=1:length(Ytest)
-            while(j <= length(Ytrain) && Ytest(i) > origVals(j)) 
-                j = j + 1;
-            end
-            if (Ytest(i) < origVals(1))
-                Ytest(i) = 0;
-            elseif (j > length(Ytrain))
-                Ytest(i) = Ytrain(length(Ytrain));
-            else
-                dleft = Ytest(i) - origVals(j - 1);
-                dright = origVals(j) - Ytest(i);
-                Ytest(i) = (Ytrain(j - 1) * dright + Ytrain(j) * dleft) / (dright + dleft);
-            end
+           while(ptr <= length(trans) && trans(ptr) <= Ytest(i)) 
+               sumCum = sumCum + vals(ptr);
+               ptr = ptr + 1;
+           end
+           dleft = Ytest(i) - trans(ptr - 1);
+           dright = trans(ptr) - Ytest(i);
+           Ytest(i) = (vals(ptr - 1) * dright + vals(ptr) * dleft) / (dleft + dright);
         end
-        Ytest = Ytest(I);
+        Ytest = Ytest(order);    
     end
 end
 

@@ -80,12 +80,16 @@ Ytrain_Copy = Ytrain;
 % Artists = [153 201 284 980 1079];
 % 
 % Somewhat bigger option
- UsersTr = 1:500; UsersTe = 501:700;
- Artists = 1:size(Ytrain, 2);
+% UsersTr = 1:800; UsersTe = 801:1000;
+% Artists = 1:size(Ytrain, 2);
 %
 % Whole dataset
 % UsersTr = 1:1500; UsersTe = 1501:size(Gtrain, 1);
 % % Artists = 1:size(Ytrain, 2);
+
+UsersTr = 1:size(Gtrain,1); UsersTe = UsersTr;
+Artists = 1:size(Ytrain, 2);
+
 
 % Always create matrixes of full size
 N = size(Ytrain, 1);
@@ -378,3 +382,10 @@ ALSFeatureTransform_TrainAndPredict(G_tr, Y_tr, G_tr, G_tr, G_tr, Y_tr,...
      Y_tr1(i, fidx) = (ratingTransform(Y_tr1(i, fidx), Y_tr1(i, fidx)));
  end
  figure; hist(Y_tr1(abs(Y_tr1) > 0), 40);
+ 
+ %% Actions
+ 
+[TrainError, TestError] = crossValidation_Weak(...
+    G_tr, Y_tr, @stackAlgorithm,...
+    'CV_k', 10, 'CV_l', 5, 'CV_verbose', 2);
+ 
