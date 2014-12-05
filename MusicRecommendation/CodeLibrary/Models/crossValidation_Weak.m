@@ -72,8 +72,6 @@ function [ TrainError, TestError ] = crossValidation_Strong( ...
     N = size(Ytrain, 1);
     M = size(Ytrain, 2);
     
-    setSeed(seed);
-    
     u_Sums = full(sum(boolean(Ytrain), 2));
     
     % Matrixes
@@ -89,6 +87,8 @@ function [ TrainError, TestError ] = crossValidation_Strong( ...
         %and include all users
         Y_tr = sparse(N, M); 
         Y_te = sparse(N, M);  
+        
+        setSeed(seed + foldIdx);
         
         for u=1:N
             if (u_Sums(u) > L) 
