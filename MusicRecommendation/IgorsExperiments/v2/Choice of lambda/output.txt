@@ -1,0 +1,3456 @@
+﻿>> exp01playground
+
+==============================
+Testing lambda 0.009000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3232.383978.
+Baseline prediction - artist average: 3273.389790.
+Baseline prediction - weighted user and artist average: 3169.559667.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4144.537561, test: 3169.559667.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2440.655313, test: 5852.519997.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3010.326200.
+Baseline prediction - artist average: 3115.364063.
+Baseline prediction - weighted user and artist average: 2973.440890.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4161.226814, test: 2973.440890.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2202.307067, test: 160189.964663.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1671.960356.
+Baseline prediction - artist average: 1763.991372.
+Baseline prediction - weighted user and artist average: 1558.418991.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4242.411785, test: 1558.418991.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2346.165914, test: 13255.031187.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3884.438712.
+Baseline prediction - artist average: 3967.981450.
+Baseline prediction - weighted user and artist average: 3858.317890.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4085.651581, test: 3858.317890.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2119.223882, test: 58738.937877.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1902.119210.
+Baseline prediction - artist average: 1940.008268.
+Baseline prediction - weighted user and artist average: 1780.591152.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4233.829106, test: 1780.591152.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2185.350089, test: 1004684.659525.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3130.357215.
+Baseline prediction - artist average: 3213.704659.
+Baseline prediction - weighted user and artist average: 3076.530815.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4151.073104, test: 3076.530815.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2075.537613, test: 10732.565607.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2148.356438.
+Baseline prediction - artist average: 2192.397933.
+Baseline prediction - weighted user and artist average: 2031.137331.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4220.462351, test: 2031.137331.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2177.456038, test: 4839.350168.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3055.467619.
+Baseline prediction - artist average: 3189.479696.
+Baseline prediction - weighted user and artist average: 3022.506061.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4155.785833, test: 3022.506061.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2249.731407, test: 15134.516745.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4363.706764.
+Baseline prediction - artist average: 4418.591361.
+Baseline prediction - weighted user and artist average: 4323.492670.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4028.770025, test: 4323.492670.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2001.899082, test: 560259.382940.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1999.149060.
+Baseline prediction - artist average: 2152.332441.
+Baseline prediction - weighted user and artist average: 1927.186685.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4225.331283, test: 1927.186685.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.009000, lambdaM: 0.009000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2225.714616, test: 14054.911416.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4164.907944, test: 2772.118215.
+==============================
+
+==============================
+Average prediction with our model
+Train: 2202.404102, test: 184774.184013.
+==============================
+
+==============================
+Testing lambda 0.010000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2382.090037.
+Baseline prediction - artist average: 2426.602670.
+Baseline prediction - weighted user and artist average: 2288.613591.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4206.977925, test: 2288.613591.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2189.497782, test: 4968.948217.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3629.096254.
+Baseline prediction - artist average: 3681.943236.
+Baseline prediction - weighted user and artist average: 3574.398344.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4107.044485, test: 3574.398344.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2016.885845, test: 5276.302472.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2905.631130.
+Baseline prediction - artist average: 2944.875695.
+Baseline prediction - weighted user and artist average: 2827.318925.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4170.677077, test: 2827.318925.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2160.007663, test: 18060.891194.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4829.777078.
+Baseline prediction - artist average: 4872.542542.
+Baseline prediction - weighted user and artist average: 4798.398706.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3970.690383, test: 4798.398706.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2216.498612, test: 5252.901087.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4389.955098.
+Baseline prediction - artist average: 4446.444474.
+Baseline prediction - weighted user and artist average: 4360.229519.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4026.721568, test: 4360.229519.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2248.818682, test: 8646.690231.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4570.674877.
+Baseline prediction - artist average: 4578.355036.
+Baseline prediction - weighted user and artist average: 4514.588460.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4017.995563, test: 4514.588460.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2186.856749, test: 9805.641957.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4774.152153.
+Baseline prediction - artist average: 4812.020976.
+Baseline prediction - weighted user and artist average: 4738.941892.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3984.783693, test: 4738.941892.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2113.846274, test: 20318.766560.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2994.533422.
+Baseline prediction - artist average: 2975.795588.
+Baseline prediction - weighted user and artist average: 2898.206281.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4169.959819, test: 2898.206281.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2148.171233, test: 14539.701828.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2619.519260.
+Baseline prediction - artist average: 2655.888438.
+Baseline prediction - weighted user and artist average: 2530.859876.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4192.866827, test: 2530.859876.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2285.235538, test: 3901.687462.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 5883.448943.
+Baseline prediction - artist average: 5911.313100.
+Baseline prediction - weighted user and artist average: 5852.207203.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3826.973930, test: 5852.207203.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.010000, lambdaM: 0.010000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2004.994884, test: 16172.742816.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4067.469127, test: 3838.376280.
+==============================
+
+==============================
+Average prediction with our model
+Train: 2157.081326, test: 10694.427382.
+==============================
+
+==============================
+Testing lambda 0.020000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3010.326200.
+Baseline prediction - artist average: 3115.364063.
+Baseline prediction - weighted user and artist average: 2973.440890.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4161.226814, test: 2973.440890.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2582.304610, test: 4473.821778.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 5657.939647.
+Baseline prediction - artist average: 5687.047756.
+Baseline prediction - weighted user and artist average: 5624.811802.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3855.891806, test: 5624.811802.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2424.225436, test: 5736.765001.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4415.450899.
+Baseline prediction - artist average: 4504.898087.
+Baseline prediction - weighted user and artist average: 4396.331665.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4025.585563, test: 4396.331665.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2468.548991, test: 4538.908496.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3158.196188.
+Baseline prediction - artist average: 3248.333734.
+Baseline prediction - weighted user and artist average: 3124.709310.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4149.530507, test: 3124.709310.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2695.873139, test: 4942.350195.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3121.710857.
+Baseline prediction - artist average: 3153.670473.
+Baseline prediction - weighted user and artist average: 3041.923522.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4153.363754, test: 3041.923522.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2516.688948, test: 3487.466157.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2706.713339.
+Baseline prediction - artist average: 2759.873264.
+Baseline prediction - weighted user and artist average: 2634.698108.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4186.303898, test: 2634.698108.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2594.823644, test: 2811.162066.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2415.498004.
+Baseline prediction - artist average: 2535.896312.
+Baseline prediction - weighted user and artist average: 2350.883247.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4201.673920, test: 2350.883247.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2674.666608, test: 2513.557732.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1940.023191.
+Baseline prediction - artist average: 2074.901436.
+Baseline prediction - weighted user and artist average: 1865.298083.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4228.714774, test: 1865.298083.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2676.280277, test: 1831.206748.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3537.317404.
+Baseline prediction - artist average: 3539.701105.
+Baseline prediction - weighted user and artist average: 3439.016714.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4118.624788, test: 3439.016714.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2418.670017, test: 3603.649451.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3936.583308.
+Baseline prediction - artist average: 3995.344824.
+Baseline prediction - weighted user and artist average: 3895.850887.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4075.636895, test: 3895.850887.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.020000, lambdaM: 0.020000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2501.220676, test: 4385.008385.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4115.655272, test: 3334.696423.
+==============================
+
+==============================
+Average prediction with our model
+Train: 2555.330235, test: 3832.389601.
+==============================
+
+==============================
+Testing lambda 0.030000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3629.096254.
+Baseline prediction - artist average: 3681.943236.
+Baseline prediction - weighted user and artist average: 3574.398344.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4107.044485, test: 3574.398344.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2817.499405, test: 5134.704431.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1671.960356.
+Baseline prediction - artist average: 1763.991372.
+Baseline prediction - weighted user and artist average: 1558.418991.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4242.411785, test: 1558.418991.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2961.279480, test: 1711.218284.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3310.699424.
+Baseline prediction - artist average: 3348.927455.
+Baseline prediction - weighted user and artist average: 3251.485463.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4142.589053, test: 3251.485463.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2813.345640, test: 3280.955842.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3045.870374.
+Baseline prediction - artist average: 3045.331904.
+Baseline prediction - weighted user and artist average: 2932.905546.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4162.034030, test: 2932.905546.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2945.986724, test: 6607.373768.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3526.344103.
+Baseline prediction - artist average: 3547.341411.
+Baseline prediction - weighted user and artist average: 3462.833089.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4118.422422, test: 3462.833089.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2692.357361, test: 3568.629439.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3081.695577.
+Baseline prediction - artist average: 3130.919315.
+Baseline prediction - weighted user and artist average: 3021.460793.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4156.873602, test: 3021.460793.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2795.912403, test: 3036.806420.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3303.556221.
+Baseline prediction - artist average: 3390.963324.
+Baseline prediction - weighted user and artist average: 3265.760612.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4136.977230, test: 3265.760612.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2915.368940, test: 3294.461066.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3033.798094.
+Baseline prediction - artist average: 3071.872513.
+Baseline prediction - weighted user and artist average: 2959.809106.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4160.999762, test: 2959.809106.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2944.517656, test: 3017.060356.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 5308.517638.
+Baseline prediction - artist average: 5366.353661.
+Baseline prediction - weighted user and artist average: 5290.960931.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3910.079328, test: 5290.960931.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2666.964595, test: 5486.166691.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3865.736424.
+Baseline prediction - artist average: 3900.694265.
+Baseline prediction - weighted user and artist average: 3809.992703.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4083.673728, test: 3809.992703.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.030000, lambdaM: 0.030000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2754.758455, test: 3903.866903.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4122.110542, test: 3312.802558.
+==============================
+
+==============================
+Average prediction with our model
+Train: 2830.799066, test: 3904.124320.
+==============================
+
+==============================
+Testing lambda 0.040000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 5657.939647.
+Baseline prediction - artist average: 5687.047756.
+Baseline prediction - weighted user and artist average: 5624.811802.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3855.891806, test: 5624.811802.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 2888.956299, test: 5600.832309.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2905.631130.
+Baseline prediction - artist average: 2944.875695.
+Baseline prediction - weighted user and artist average: 2827.318925.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4170.677077, test: 2827.318925.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3068.929461, test: 2823.945603.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3314.730289.
+Baseline prediction - artist average: 3342.907559.
+Baseline prediction - weighted user and artist average: 3254.282844.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4143.068134, test: 3254.282844.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3133.587383, test: 4123.993116.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4808.508740.
+Baseline prediction - artist average: 4840.104551.
+Baseline prediction - weighted user and artist average: 4763.299589.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3973.612683, test: 4763.299589.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3009.390106, test: 4722.642715.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3511.327593.
+Baseline prediction - artist average: 3591.416130.
+Baseline prediction - weighted user and artist average: 3470.721125.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4117.860409, test: 3470.721125.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3136.254117, test: 3237.762834.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2770.778150.
+Baseline prediction - artist average: 2779.762406.
+Baseline prediction - weighted user and artist average: 2681.841041.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4185.928384, test: 2681.841041.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3223.835306, test: 2719.540212.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2465.970842.
+Baseline prediction - artist average: 2607.965434.
+Baseline prediction - weighted user and artist average: 2422.008327.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4198.413335, test: 2422.008327.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3182.521874, test: 2447.720854.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3747.240420.
+Baseline prediction - artist average: 3855.503001.
+Baseline prediction - weighted user and artist average: 3729.108537.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4099.842197, test: 3729.108537.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3107.674362, test: 3776.684713.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3868.298394.
+Baseline prediction - artist average: 3907.146711.
+Baseline prediction - weighted user and artist average: 3806.640801.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4085.091961, test: 3806.640801.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3091.671711, test: 3894.805323.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3689.750742.
+Baseline prediction - artist average: 3751.363263.
+Baseline prediction - weighted user and artist average: 3636.954916.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4102.480942, test: 3636.954916.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.040000, lambdaM: 0.040000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3071.792957, test: 3498.986543.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4093.286693, test: 3621.698790.
+==============================
+
+==============================
+Average prediction with our model
+Train: 3091.461358, test: 3684.691422.
+==============================
+
+==============================
+Testing lambda 0.050000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1671.960356.
+Baseline prediction - artist average: 1763.991372.
+Baseline prediction - weighted user and artist average: 1558.418991.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4242.411785, test: 1558.418991.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3400.511250, test: 1588.339901.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4415.450899.
+Baseline prediction - artist average: 4504.898087.
+Baseline prediction - weighted user and artist average: 4396.331665.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4025.585563, test: 4396.331665.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3202.634266, test: 4368.911600.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2433.625725.
+Baseline prediction - artist average: 2461.701525.
+Baseline prediction - weighted user and artist average: 2321.366776.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4203.501322, test: 2321.366776.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3382.342505, test: 2313.496669.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2859.729497.
+Baseline prediction - artist average: 2947.518370.
+Baseline prediction - weighted user and artist average: 2802.035218.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4171.231920, test: 2802.035218.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3394.529782, test: 2830.234847.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3447.045184.
+Baseline prediction - artist average: 3499.493079.
+Baseline prediction - weighted user and artist average: 3386.443824.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4125.174734, test: 3386.443824.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3258.092645, test: 3117.654533.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2343.778094.
+Baseline prediction - artist average: 2462.780355.
+Baseline prediction - weighted user and artist average: 2285.060527.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4211.231603, test: 2285.060527.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3380.980462, test: 2339.713462.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2124.326533.
+Baseline prediction - artist average: 2215.155981.
+Baseline prediction - weighted user and artist average: 2039.504458.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4220.156362, test: 2039.504458.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3387.979786, test: 2041.387478.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 5522.391243.
+Baseline prediction - artist average: 5514.085655.
+Baseline prediction - weighted user and artist average: 5464.360759.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3874.109835, test: 5464.360759.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3076.094997, test: 9468.723112.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2514.132328.
+Baseline prediction - artist average: 2601.912673.
+Baseline prediction - weighted user and artist average: 2454.141379.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4201.206381, test: 2454.141379.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3360.632119, test: 3241.401873.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2437.962580.
+Baseline prediction - artist average: 2561.794997.
+Baseline prediction - weighted user and artist average: 2399.731495.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4201.057224, test: 2399.731495.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.050000, lambdaM: 0.050000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3324.974740, test: 2293.376098.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.566673, test: 2910.739509.
+==============================
+
+==============================
+Average prediction with our model
+Train: 3316.877255, test: 3360.323957.
+==============================
+
+==============================
+Testing lambda 0.060000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2905.631130.
+Baseline prediction - artist average: 2944.875695.
+Baseline prediction - weighted user and artist average: 2827.318925.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4170.677077, test: 2827.318925.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3438.582695, test: 2817.192260.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3310.699424.
+Baseline prediction - artist average: 3348.927455.
+Baseline prediction - weighted user and artist average: 3251.485463.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4142.589053, test: 3251.485463.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3443.000884, test: 3271.262954.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2417.581468.
+Baseline prediction - artist average: 2562.854788.
+Baseline prediction - weighted user and artist average: 2361.350540.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4201.060430, test: 2361.350540.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3521.341664, test: 2319.884161.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 5169.479730.
+Baseline prediction - artist average: 5199.639838.
+Baseline prediction - weighted user and artist average: 5135.433498.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3929.257104, test: 5135.433498.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3283.522293, test: 5170.641795.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3236.282768.
+Baseline prediction - artist average: 3265.484609.
+Baseline prediction - weighted user and artist average: 3171.465992.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4148.551346, test: 3171.465992.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3468.267136, test: 3271.674419.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2243.474631.
+Baseline prediction - artist average: 2384.754850.
+Baseline prediction - weighted user and artist average: 2176.497862.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4212.115227, test: 2176.497862.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3482.649441, test: 2035.206010.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4729.154749.
+Baseline prediction - artist average: 4760.251264.
+Baseline prediction - weighted user and artist average: 4685.573708.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3992.958268, test: 4685.573708.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3366.168236, test: 4563.100040.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3319.112899.
+Baseline prediction - artist average: 3398.565171.
+Baseline prediction - weighted user and artist average: 3271.677297.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4133.870607, test: 3271.677297.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3442.843254, test: 3259.255161.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2568.169018.
+Baseline prediction - artist average: 2636.531454.
+Baseline prediction - weighted user and artist average: 2504.643746.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4198.719054, test: 2504.643746.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3488.271374, test: 2504.772402.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2743.788238.
+Baseline prediction - artist average: 2823.920732.
+Baseline prediction - weighted user and artist average: 2678.164987.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4180.214961, test: 2678.164987.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.060000, lambdaM: 0.060000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3499.325534, test: 2676.857324.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4131.001313, test: 3206.361202.
+==============================
+
+==============================
+Average prediction with our model
+Train: 3443.397251, test: 3188.984653.
+==============================
+
+==============================
+Testing lambda 0.070000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4415.450899.
+Baseline prediction - artist average: 4504.898087.
+Baseline prediction - weighted user and artist average: 4396.331665.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4025.585563, test: 4396.331665.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3454.780193, test: 4355.561645.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3314.730289.
+Baseline prediction - artist average: 3342.907559.
+Baseline prediction - weighted user and artist average: 3254.282844.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4143.068134, test: 3254.282844.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3599.302523, test: 3283.998077.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2887.419829.
+Baseline prediction - artist average: 2955.213731.
+Baseline prediction - weighted user and artist average: 2829.102104.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4175.193165, test: 2829.102104.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3631.752001, test: 2844.546507.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3355.081806.
+Baseline prediction - artist average: 3402.177101.
+Baseline prediction - weighted user and artist average: 3299.363841.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4139.185272, test: 3299.363841.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3606.975620, test: 3306.400785.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2327.015926.
+Baseline prediction - artist average: 2382.700447.
+Baseline prediction - weighted user and artist average: 2248.132651.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4209.628904, test: 2248.132651.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3625.234673, test: 2262.933358.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4610.751146.
+Baseline prediction - artist average: 4626.521873.
+Baseline prediction - weighted user and artist average: 4561.783508.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4001.186771, test: 4561.783508.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3433.043818, test: 4569.075484.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2517.606604.
+Baseline prediction - artist average: 2599.239101.
+Baseline prediction - weighted user and artist average: 2452.230321.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4201.588668, test: 2452.230321.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3630.209195, test: 2472.805946.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2064.940021.
+Baseline prediction - artist average: 2139.492318.
+Baseline prediction - weighted user and artist average: 1970.814336.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4224.415822, test: 1970.814336.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3615.533030, test: 1949.479183.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2118.584577.
+Baseline prediction - artist average: 2227.993912.
+Baseline prediction - weighted user and artist average: 2031.067456.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4218.667117, test: 2031.067456.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3615.798888, test: 1943.595479.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1731.166271.
+Baseline prediction - artist average: 1803.227288.
+Baseline prediction - weighted user and artist average: 1600.955037.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4239.805585, test: 1600.955037.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.070000, lambdaM: 0.070000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3649.016838, test: 1580.988327.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4157.832500, test: 2864.406376.
+==============================
+
+==============================
+Average prediction with our model
+Train: 3586.164678, test: 2856.938479.
+==============================
+
+==============================
+Testing lambda 0.080000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3310.699424.
+Baseline prediction - artist average: 3348.927455.
+Baseline prediction - weighted user and artist average: 3251.485463.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4142.589053, test: 3251.485463.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3667.285329, test: 3299.795852.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2433.625725.
+Baseline prediction - artist average: 2461.701525.
+Baseline prediction - weighted user and artist average: 2321.366776.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4203.501322, test: 2321.366776.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3738.396439, test: 2294.360636.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1588.906509.
+Baseline prediction - artist average: 1793.732529.
+Baseline prediction - weighted user and artist average: 1500.848353.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4243.168444, test: 1500.848353.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3799.315148, test: 1460.907989.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2792.662847.
+Baseline prediction - artist average: 2865.662797.
+Baseline prediction - weighted user and artist average: 2726.788491.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4181.626872, test: 2726.788491.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3718.471776, test: 2704.676315.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1872.730765.
+Baseline prediction - artist average: 1929.378276.
+Baseline prediction - weighted user and artist average: 1739.963500.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4233.685097, test: 1739.963500.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3738.636601, test: 1652.584541.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2639.424328.
+Baseline prediction - artist average: 2725.092435.
+Baseline prediction - weighted user and artist average: 2578.931603.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4189.048801, test: 2578.931603.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3683.156209, test: 2551.706498.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3162.462664.
+Baseline prediction - artist average: 3253.760191.
+Baseline prediction - weighted user and artist average: 3120.507606.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4153.028557, test: 3120.507606.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3711.582665, test: 3108.976543.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2013.460232.
+Baseline prediction - artist average: 2115.737595.
+Baseline prediction - weighted user and artist average: 1916.257944.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4225.743317, test: 1916.257944.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3759.015679, test: 1861.468483.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1904.045557.
+Baseline prediction - artist average: 2034.236697.
+Baseline prediction - weighted user and artist average: 1806.038141.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4230.338705, test: 1806.038141.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3758.684153, test: 1735.845899.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4626.981023.
+Baseline prediction - artist average: 4656.360111.
+Baseline prediction - weighted user and artist average: 4589.086904.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4006.597819, test: 4589.086904.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.080000, lambdaM: 0.080000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3578.994024, test: 4519.342208.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4180.932799, test: 2555.127478.
+==============================
+
+==============================
+Average prediction with our model
+Train: 3715.353802, test: 2518.966496.
+==============================
+
+==============================
+Testing lambda 0.090000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3314.730289.
+Baseline prediction - artist average: 3342.907559.
+Baseline prediction - weighted user and artist average: 3254.282844.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4143.068134, test: 3254.282844.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3778.696707, test: 3211.440366.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2417.581468.
+Baseline prediction - artist average: 2562.854788.
+Baseline prediction - weighted user and artist average: 2361.350540.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4201.060430, test: 2361.350540.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3804.884874, test: 2304.301446.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2306.233934.
+Baseline prediction - artist average: 2368.086326.
+Baseline prediction - weighted user and artist average: 2211.153974.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4210.190277, test: 2211.153974.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3825.712589, test: 2131.296137.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3840.075476.
+Baseline prediction - artist average: 3908.314640.
+Baseline prediction - weighted user and artist average: 3798.713674.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4086.804849, test: 3798.713674.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3687.516086, test: 3774.683580.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2832.717092.
+Baseline prediction - artist average: 2989.118907.
+Baseline prediction - weighted user and artist average: 2802.170823.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4172.854820, test: 2802.170823.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3760.500738, test: 2751.922799.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1844.907598.
+Baseline prediction - artist average: 2011.838273.
+Baseline prediction - weighted user and artist average: 1772.413553.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4232.480226, test: 1772.413553.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3820.349658, test: 1767.539609.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3690.506218.
+Baseline prediction - artist average: 3746.399098.
+Baseline prediction - weighted user and artist average: 3640.519940.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4101.193852, test: 3640.519940.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3696.256276, test: 3627.114826.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2926.201383.
+Baseline prediction - artist average: 2983.611255.
+Baseline prediction - weighted user and artist average: 2863.099679.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4168.200434, test: 2863.099679.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3771.235606, test: 2836.365306.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3782.755225.
+Baseline prediction - artist average: 3806.158763.
+Baseline prediction - weighted user and artist average: 3719.374716.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4094.491711, test: 3719.374716.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3688.854834, test: 3618.832247.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4805.780410.
+Baseline prediction - artist average: 4805.729256.
+Baseline prediction - weighted user and artist average: 4742.234983.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3976.229672, test: 4742.234983.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.090000, lambdaM: 0.090000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3583.290052, test: 4737.625644.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4138.657440, test: 3116.531473.
+==============================
+
+==============================
+Average prediction with our model
+Train: 3741.729742, test: 3076.112196.
+==============================
+
+==============================
+Testing lambda 0.100000.
+==============================
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2433.625725.
+Baseline prediction - artist average: 2461.701525.
+Baseline prediction - weighted user and artist average: 2321.366776.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4203.501322, test: 2321.366776.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3879.285010, test: 2292.374160.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2887.419829.
+Baseline prediction - artist average: 2955.213731.
+Baseline prediction - weighted user and artist average: 2829.102104.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4175.193165, test: 2829.102104.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3863.518770, test: 2843.022134.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2382.027558.
+Baseline prediction - artist average: 2456.564151.
+Baseline prediction - weighted user and artist average: 2295.685788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4204.801506, test: 2295.685788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3865.638279, test: 2250.921222.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4195.721875.
+Baseline prediction - artist average: 4239.572231.
+Baseline prediction - weighted user and artist average: 4155.001049.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4048.560806, test: 4155.001049.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3698.626845, test: 4156.035077.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2141.196354.
+Baseline prediction - artist average: 2193.833971.
+Baseline prediction - weighted user and artist average: 2039.560421.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4221.196094, test: 2039.560421.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3884.861551, test: 1980.068254.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2145.477229.
+Baseline prediction - artist average: 2178.273657.
+Baseline prediction - weighted user and artist average: 2028.935316.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4221.682242, test: 2028.935316.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3888.549273, test: 1976.261186.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3982.318450.
+Baseline prediction - artist average: 4028.960128.
+Baseline prediction - weighted user and artist average: 3943.379832.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4072.815210, test: 3943.379832.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3744.150779, test: 3953.472885.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 5226.124137.
+Baseline prediction - artist average: 5226.054349.
+Baseline prediction - weighted user and artist average: 5173.493533.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3919.603308, test: 5173.493533.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3614.023138, test: 5155.307361.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4568.153933.
+Baseline prediction - artist average: 4630.282977.
+Baseline prediction - weighted user and artist average: 4539.671315.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4010.788225, test: 4539.671315.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3706.056131, test: 4535.455935.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 1862.502580.
+Baseline prediction - artist average: 2003.114610.
+Baseline prediction - weighted user and artist average: 1793.621704.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4233.489956, test: 1793.621704.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 50.
+LambdaU: 0.100000, lambdaM: 0.100000.
+==============================
+
+==============================
+Prediction with our model
+Train: 3907.711337, test: 1725.914409.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4131.163183, test: 3111.981784.
+==============================
+
+==============================
+Average prediction with our model
+Train: 3805.242111, test: 3086.883262.
+==============================
+>> 
