@@ -4,7 +4,7 @@ function [ Y_te ] = DEtransformData( lambda, muU, stdU, Y_te, I_te, Y_tr, I_tr)
         Y_te(i,teidx) = Y_te(i,teidx) * stdU(i) + muU(i);
     end
     
-	Y_te = detransformWithBoxCox(Y_te, Ite, lambda);
+	Y_te = detransformWithBoxCox(Y_te, I_te, lambda);
     
 end
 

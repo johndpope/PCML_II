@@ -34,6 +34,7 @@ function [ TrainPredicted, TestPredicted ] = ...
     end
     
     aveRating(isnan(aveRating)) = 0.0;
+    aveRating(isinf(aveRating)) = 0.0;
 
     setSeed(1);
     M = [aveRating; randn(K - 1, D)];

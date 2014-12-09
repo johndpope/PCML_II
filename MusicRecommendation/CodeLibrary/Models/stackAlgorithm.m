@@ -55,24 +55,53 @@ function [ TrainPredicted, TestPredicted ] = ...
  I_te = (Y_te_0 > 0);
  
  % Transform the data
- [muU, stdU, Y_tr_1] = transformData(Y_tr_0, I_tr, Y_tr_0, I_tr);
- [muU, stdU, Y_te_1] = transformData(Y_te_0, I_te, Y_tr_0, I_tr);
- 
+% [muU, stdU, Y_tr_1] = transformData(Y_tr_0, I_tr, Y_tr_0, I_tr);
+% [muU, stdU, Y_te_1] = transformData(Y_te_0, I_te, Y_tr_0, I_tr);
+
+ [lambda, muU, stdU, Y_tr_1] = transformData2(Y_tr_0, I_tr, Y_tr_0, I_tr);
+ [lambda, muU, stdU, Y_te_1] = transformData2(Y_te_0, I_te, Y_tr_0, I_tr);
+
+
  % Subtract baseline
- [meanAll, meanU, meanI, Y_tr_2] = subtractBaseline(Y_tr_1, I_tr, Y_tr_1, I_tr);
- [meanAll, meanU, meanI, Y_te_2] = subtractBaseline(Y_te_1, I_te, Y_tr_1, I_tr);
+  [meanAll, meanU, meanI, Y_tr_2] = subtractBaseline(Y_tr_1, I_tr, Y_tr_1, I_tr);
+  [meanAll, meanU, meanI, Y_te_2] = subtractBaseline(Y_te_1, I_te, Y_tr_1, I_tr);
  
  % Run algorithm
- P_tr_2 = Y_tr_2; %sparse(size(Y_tr_2, 1), size(Y_tr_2, 2));
- P_te_2 = Y_te_2; %sparse(size(Y_te_2, 1), size(Y_te_2, 2));
-  
+ % P_tr_2 = Y_tr_2; %sparse(size(Y_tr_2, 1), size(Y_tr_2, 2));
+ % P_te_2 = Y_te_2; %sparse(size(Y_te_2, 1), size(Y_te_2, 2));
+ 
+  P_tr_2 = sparse(size(Y_tr_2, 1), size(Y_tr_2, 2));
+  P_te_2 = sparse(size(Y_te_2, 1), size(Y_te_2, 2));
+% [P_tr_2, P_te_2] = ALS_TrainAndPredict(Gtrain, Y_tr_1, Gtrain_test, Gtest_train, Gtest, Y_te_1,...
+%     'Alg_numOfIterations', 20,...
+%     'Alg_numOfFeatures', 10,...
+%     'Alg_lambda', 0.0001);
+ 
+%  figure;
+%  
+%  subplot(1,2,1); hist(Y_tr_1(I_tr), 100);
+%  subplot(1,2,2); hist(Y_tr_2(I_tr), 100);
+%  %subplot(1,3,1); hist(Y_tr_0(I_tr));
+%  %subplot(1,3,2); hist(Y_tr_1(I_tr), 100);
+%  %subplot(1,3,3); 
+%  
+%  
+%  figure;
+%  % subplot(1,3,1); hist(Y_te_0(I_te));
+%  subplot(1,2,1); hist(Y_te_1(I_te), 100);
+%  subplot(1,2,2); hist(Y_te_2(I_te), 100);
+%   
  % Add baseline
  P_tr_1 = addBaseline(meanAll, meanU, meanI, P_tr_2, I_tr);
  P_te_1 = addBaseline(meanAll, meanU, meanI, P_te_2, I_te);
  
   % Detransform the data
- P_tr_0 = DEtransformData(muU, stdU, P_tr_1, I_tr, Y_tr_0, I_tr);
- P_te_0 = DEtransformData(muU, stdU, P_te_1, I_te, Y_tr_0, I_tr);
+ % P_tr_0 = DEtransformData(muU, stdU, P_tr_1, I_tr, Y_tr_0, I_tr);
+ % P_te_0 = DEtransformData(muU, stdU, P_te_1, I_te, Y_tr_0, I_tr);
+ 
+ P_tr_0 = DEtransformData2(lambda, muU, stdU, P_tr_1, I_tr, Y_tr_0, I_tr);
+ P_te_0 = DEtransformData2(lambda, muU, stdU, P_te_1, I_te, Y_tr_0, I_tr);
+ 
  
  % Return results
  TrainPredicted = P_tr_0;
