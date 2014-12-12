@@ -1,0 +1,1279 @@
+﻿>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 30.
+LambdaU: 180.000000, lambdaM: 180.000000.
+Iteration 0. Train: 3.507192, test: 3.493209.
+Iteration 1. Train: 1.426806, test: 1.501104.
+Iteration 2. Train: 1.427764, test: 1.501195.
+Iteration 3. Train: 1.427802, test: 1.501197.
+Iteration 4. Train: 1.427806, test: 1.501197.
+Iteration 5. Train: 1.427806, test: 1.501197.
+Iteration 6. Train: 1.427806, test: 1.501197.
+Iteration 7. Train: 1.427806, test: 1.501197.
+Iteration 8. Train: 1.427806, test: 1.501197.
+Iteration 9. Train: 1.427806, test: 1.501197.
+Iteration 10. Train: 1.427806, test: 1.501197.
+Iteration 11. Train: 1.427806, test: 1.501197.
+Iteration 12. Train: 1.427806, test: 1.501197.
+Iteration 13. Train: 1.427806, test: 1.501197.
+Iteration 14. Train: 1.427806, test: 1.501197.
+Iteration 15. Train: 1.427806, test: 1.501197.
+Iteration 16. Train: 1.427806, test: 1.501197.
+Iteration 17. Train: 1.427806, test: 1.501197.
+Iteration 18. Train: 1.427806, test: 1.501197.
+Iteration 19. Train: 1.427806, test: 1.501197.
+Iteration 20. Train: 1.427806, test: 1.501197.
+Iteration 21. Train: 1.427806, test: 1.501197.
+Iteration 22. Train: 1.427806, test: 1.501197.
+Iteration 23. Train: 1.427806, test: 1.501197.
+Iteration 24. Train: 1.427806, test: 1.501197.
+Iteration 25. Train: 1.427806, test: 1.501197.
+Iteration 26. Train: 1.427806, test: 1.501197.
+Iteration 27. Train: 1.427806, test: 1.501197.
+Iteration 28. Train: 1.427806, test: 1.501197.
+Iteration 29. Train: 1.427806, test: 1.501197.
+Iteration 30. Train: 1.427806, test: 1.501197.
+==============================
+
+==============================
+Prediction with our model
+Train: 4409.101089, test: 3239.421878.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 4409.101089, test: 3239.421878.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 30.
+LambdaU: 180.000000, lambdaM: 180.000000.
+Iteration 0. Train: 3.507192, test: 3.493209.
+Iteration 1. Train: 1.426806, test: 1.501104.
+Iteration 2. Train: 1.427764, test: 1.501195.
+Iteration 3. Train: 1.427802, test: 1.501197.
+Iteration 4. Train: 1.427806, test: 1.501197.
+Iteration 5. Train: 1.427806, test: 1.501197.
+Iteration 6. Train: 1.427806, test: 1.501197.
+Iteration 7. Train: 1.427806, test: 1.501197.
+Iteration 8. Train: 1.427806, test: 1.501197.
+Iteration 9. Train: 1.427806, test: 1.501197.
+Iteration 10. Train: 1.427806, test: 1.501197.
+Iteration 11. Train: 1.427806, test: 1.501197.
+Iteration 12. Train: 1.427806, test: 1.501197.
+Iteration 13. Train: 1.427806, test: 1.501197.
+Iteration 14. Train: 1.427806, test: 1.501197.
+Iteration 15. Train: 1.427806, test: 1.501197.
+Iteration 16. Train: 1.427806, test: 1.501197.
+Iteration 17. Train: 1.427806, test: 1.501197.
+Iteration 18. Train: 1.427806, test: 1.501197.
+Iteration 19. Train: 1.427806, test: 1.501197.
+Iteration 20. Train: 1.427806, test: 1.501197.
+Iteration 21. Train: 1.427806, test: 1.501197.
+Iteration 22. Train: 1.427806, test: 1.501197.
+Iteration 23. Train: 1.427806, test: 1.501197.
+Iteration 24. Train: 1.427806, test: 1.501197.
+Iteration 25. Train: 1.427806, test: 1.501197.
+Iteration 26. Train: 1.427806, test: 1.501197.
+Iteration 27. Train: 1.427806, test: 1.501197.
+Iteration 28. Train: 1.427806, test: 1.501197.
+Iteration 29. Train: 1.427806, test: 1.501197.
+Iteration 30. Train: 1.427806, test: 1.501197.
+==============================
+
+==============================
+Prediction with our model
+Train: 4354.228997, test: 3192.293147.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 4354.228997, test: 3192.293147.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 30.
+LambdaU: 180.000000, lambdaM: 180.000000.
+Iteration 0. Train: 6.609608, test: 6.496432.
+Iteration 1. Train: 3.300293, test: 5.281209.
+Iteration 2. Train: 1.382980, test: 3.370072.
+Iteration 3. Train: 1.060137, test: 2.615840.
+Iteration 4. Train: 1.000401, test: 2.285329.
+Iteration 5. Train: 0.982119, test: 2.116640.
+Iteration 6. Train: 0.973588, test: 2.022386.
+Iteration 7. Train: 0.968135, test: 1.965304.
+Iteration 8. Train: 0.964108, test: 1.928118.
+Iteration 9. Train: 0.960998, test: 1.902451.
+Iteration 10. Train: 0.958525, test: 1.883990.
+Iteration 11. Train: 0.956520, test: 1.870311.
+Iteration 12. Train: 0.954881, test: 1.859915.
+Iteration 13. Train: 0.953528, test: 1.851822.
+Iteration 14. Train: 0.952398, test: 1.845369.
+Iteration 15. Train: 0.951439, test: 1.840109.
+Iteration 16. Train: 0.950614, test: 1.835743.
+Iteration 17. Train: 0.949895, test: 1.832069.
+Iteration 18. Train: 0.949260, test: 1.828948.
+Iteration 19. Train: 0.948692, test: 1.826277.
+Iteration 20. Train: 0.948178, test: 1.823977.
+Iteration 21. Train: 0.947708, test: 1.821989.
+Iteration 22. Train: 0.947280, test: 1.820263.
+Iteration 23. Train: 0.946888, test: 1.818762.
+Iteration 24. Train: 0.946532, test: 1.817454.
+Iteration 25. Train: 0.946209, test: 1.816313.
+Iteration 26. Train: 0.945917, test: 1.815317.
+Iteration 27. Train: 0.945654, test: 1.814447.
+Iteration 28. Train: 0.945418, test: 1.813687.
+Iteration 29. Train: 0.945204, test: 1.813022.
+Iteration 30. Train: 0.945011, test: 1.812439.
+==============================
+
+==============================
+Prediction with our model
+Train: 674.780216, test: 3319.546472.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 674.780216, test: 3319.546472.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 30.
+LambdaU: 180.000000, lambdaM: 180.000000.
+Iteration 0. Train: 3.507192, test: 3.493209.
+Iteration 1. Train: 1.227651, test: 1.526527.
+Iteration 2. Train: 1.176759, test: 1.459463.
+Iteration 3. Train: 1.172575, test: 1.440664.
+Iteration 4. Train: 1.171183, test: 1.433107.
+Iteration 5. Train: 1.169793, test: 1.429289.
+Iteration 6. Train: 1.168479, test: 1.427159.
+Iteration 7. Train: 1.167300, test: 1.425768.
+Iteration 8. Train: 1.166276, test: 1.424703.
+Iteration 9. Train: 1.165386, test: 1.423798.
+Iteration 10. Train: 1.164598, test: 1.422993.
+Iteration 11. Train: 1.163882, test: 1.422266.
+Iteration 12. Train: 1.163215, test: 1.421610.
+Iteration 13. Train: 1.162585, test: 1.421023.
+Iteration 14. Train: 1.161987, test: 1.420505.
+Iteration 15. Train: 1.161421, test: 1.420057.
+Iteration 16. Train: 1.160890, test: 1.419675.
+Iteration 17. Train: 1.160396, test: 1.419359.
+Iteration 18. Train: 1.159943, test: 1.419102.
+Iteration 19. Train: 1.159529, test: 1.418899.
+Iteration 20. Train: 1.159154, test: 1.418742.
+Iteration 21. Train: 1.158814, test: 1.418623.
+Iteration 22. Train: 1.158507, test: 1.418536.
+Iteration 23. Train: 1.158227, test: 1.418472.
+Iteration 24. Train: 1.157974, test: 1.418426.
+Iteration 25. Train: 1.157743, test: 1.418391.
+Iteration 26. Train: 1.157533, test: 1.418362.
+Iteration 27. Train: 1.157340, test: 1.418335.
+Iteration 28. Train: 1.157164, test: 1.418307.
+Iteration 29. Train: 1.157003, test: 1.418274.
+Iteration 30. Train: 1.156855, test: 1.418235.
+==============================
+
+==============================
+Prediction with our model
+Train: 668.873911, test: 3097.624619.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 668.873911, test: 3097.624619.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 10.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 3.507192, test: 3.493209.
+Iteration 1. Train: 1.229539, test: 1.523137.
+Iteration 2. Train: 1.181350, test: 1.458197.
+Iteration 3. Train: 1.178825, test: 1.440268.
+Iteration 4. Train: 1.178182, test: 1.433255.
+Iteration 5. Train: 1.177242, test: 1.429765.
+Iteration 6. Train: 1.176218, test: 1.427799.
+Iteration 7. Train: 1.175230, test: 1.426486.
+Iteration 8. Train: 1.174329, test: 1.425456.
+Iteration 9. Train: 1.173519, test: 1.424567.
+Iteration 10. Train: 1.172789, test: 1.423766.
+Iteration 11. Train: 1.172118, test: 1.423037.
+Iteration 12. Train: 1.171494, test: 1.422380.
+Iteration 13. Train: 1.170906, test: 1.421797.
+Iteration 14. Train: 1.170351, test: 1.421290.
+Iteration 15. Train: 1.169829, test: 1.420860.
+Iteration 16. Train: 1.169344, test: 1.420504.
+Iteration 17. Train: 1.168897, test: 1.420215.
+Iteration 18. Train: 1.168490, test: 1.419986.
+Iteration 19. Train: 1.168123, test: 1.419808.
+Iteration 20. Train: 1.167791, test: 1.419672.
+Iteration 21. Train: 1.167491, test: 1.419571.
+Iteration 22. Train: 1.167219, test: 1.419497.
+Iteration 23. Train: 1.166972, test: 1.419444.
+Iteration 24. Train: 1.166745, test: 1.419409.
+Iteration 25. Train: 1.166537, test: 1.419386.
+Iteration 26. Train: 1.166345, test: 1.419372.
+Iteration 27. Train: 1.166167, test: 1.419363.
+Iteration 28. Train: 1.166001, test: 1.419358.
+Iteration 29. Train: 1.165845, test: 1.419354.
+Iteration 30. Train: 1.165699, test: 1.419348.
+==============================
+
+==============================
+Prediction with our model
+Train: 709.617215, test: 3093.331917.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 709.617215, test: 3093.331917.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.661653, test: 5.707692.
+Iteration 1. Train: 1.141478, test: 1.471462.
+Iteration 2. Train: 1.117796, test: 1.417303.
+Iteration 3. Train: 1.124357, test: 1.406134.
+Iteration 4. Train: 1.129480, test: 1.403111.
+Iteration 5. Train: 1.132787, test: 1.402247.
+Iteration 6. Train: 1.134944, test: 1.402099.
+Iteration 7. Train: 1.136397, test: 1.402211.
+Iteration 8. Train: 1.137410, test: 1.402414.
+Iteration 9. Train: 1.138146, test: 1.402643.
+Iteration 10. Train: 1.138703, test: 1.402874.
+Iteration 11. Train: 1.139139, test: 1.403096.
+Iteration 12. Train: 1.139491, test: 1.403304.
+Iteration 13. Train: 1.139781, test: 1.403497.
+Iteration 14. Train: 1.140025, test: 1.403675.
+Iteration 15. Train: 1.140233, test: 1.403838.
+Iteration 16. Train: 1.140412, test: 1.403987.
+Iteration 17. Train: 1.140569, test: 1.404124.
+Iteration 18. Train: 1.140706, test: 1.404249.
+Iteration 19. Train: 1.140827, test: 1.404364.
+Iteration 20. Train: 1.140934, test: 1.404470.
+Iteration 21. Train: 1.141028, test: 1.404567.
+Iteration 22. Train: 1.141111, test: 1.404657.
+Iteration 23. Train: 1.141185, test: 1.404739.
+Iteration 24. Train: 1.141251, test: 1.404815.
+Iteration 25. Train: 1.141308, test: 1.404885.
+Iteration 26. Train: 1.141359, test: 1.404950.
+Iteration 27. Train: 1.141404, test: 1.405009.
+Iteration 28. Train: 1.141443, test: 1.405064.
+Iteration 29. Train: 1.141478, test: 1.405115.
+Iteration 30. Train: 1.141508, test: 1.405161.
+==============================
+
+==============================
+Prediction with our model
+Train: 638.341410, test: 3074.503530.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 638.341410, test: 3074.503530.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 160.000000, lambdaM: 160.000000.
+Iteration 0. Train: 5.661653, test: 5.707692.
+Iteration 1. Train: 1.125902, test: 1.473939.
+Iteration 2. Train: 1.097311, test: 1.415821.
+Iteration 3. Train: 1.101090, test: 1.402721.
+Iteration 4. Train: 1.104973, test: 1.398470.
+Iteration 5. Train: 1.107651, test: 1.396839.
+Iteration 6. Train: 1.109535, test: 1.396222.
+Iteration 7. Train: 1.110894, test: 1.396051.
+Iteration 8. Train: 1.111897, test: 1.396078.
+Iteration 9. Train: 1.112657, test: 1.396189.
+Iteration 10. Train: 1.113248, test: 1.396331.
+Iteration 11. Train: 1.113721, test: 1.396482.
+Iteration 12. Train: 1.114111, test: 1.396633.
+Iteration 13. Train: 1.114439, test: 1.396780.
+Iteration 14. Train: 1.114720, test: 1.396921.
+Iteration 15. Train: 1.114965, test: 1.397054.
+Iteration 16. Train: 1.115180, test: 1.397182.
+Iteration 17. Train: 1.115372, test: 1.397303.
+Iteration 18. Train: 1.115542, test: 1.397417.
+Iteration 19. Train: 1.115695, test: 1.397527.
+Iteration 20. Train: 1.115832, test: 1.397630.
+Iteration 21. Train: 1.115955, test: 1.397729.
+Iteration 22. Train: 1.116067, test: 1.397822.
+Iteration 23. Train: 1.116167, test: 1.397910.
+Iteration 24. Train: 1.116258, test: 1.397994.
+Iteration 25. Train: 1.116340, test: 1.398072.
+Iteration 26. Train: 1.116414, test: 1.398145.
+Iteration 27. Train: 1.116481, test: 1.398214.
+Iteration 28. Train: 1.116541, test: 1.398279.
+Iteration 29. Train: 1.116597, test: 1.398339.
+Iteration 30. Train: 1.116647, test: 1.398395.
+==============================
+
+==============================
+Prediction with our model
+Train: 545.050699, test: 3073.961644.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 545.050699, test: 3073.961644.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 250.000000, lambdaM: 250.000000.
+Iteration 0. Train: 5.661653, test: 5.707692.
+Iteration 1. Train: 1.156902, test: 1.469913.
+Iteration 2. Train: 1.136406, test: 1.419311.
+Iteration 3. Train: 1.145325, test: 1.409835.
+Iteration 4. Train: 1.151567, test: 1.407946.
+Iteration 5. Train: 1.155429, test: 1.407778.
+Iteration 6. Train: 1.157821, test: 1.408036.
+Iteration 7. Train: 1.159359, test: 1.408371.
+Iteration 8. Train: 1.160393, test: 1.408695.
+Iteration 9. Train: 1.161122, test: 1.408991.
+Iteration 10. Train: 1.161659, test: 1.409258.
+Iteration 11. Train: 1.162068, test: 1.409502.
+Iteration 12. Train: 1.162388, test: 1.409723.
+Iteration 13. Train: 1.162643, test: 1.409925.
+Iteration 14. Train: 1.162851, test: 1.410108.
+Iteration 15. Train: 1.163021, test: 1.410275.
+Iteration 16. Train: 1.163163, test: 1.410426.
+Iteration 17. Train: 1.163282, test: 1.410563.
+Iteration 18. Train: 1.163381, test: 1.410688.
+Iteration 19. Train: 1.163465, test: 1.410800.
+Iteration 20. Train: 1.163536, test: 1.410902.
+Iteration 21. Train: 1.163596, test: 1.410993.
+Iteration 22. Train: 1.163646, test: 1.411076.
+Iteration 23. Train: 1.163688, test: 1.411151.
+Iteration 24. Train: 1.163723, test: 1.411219.
+Iteration 25. Train: 1.163752, test: 1.411280.
+Iteration 26. Train: 1.163776, test: 1.411335.
+Iteration 27. Train: 1.163795, test: 1.411385.
+Iteration 28. Train: 1.163810, test: 1.411430.
+Iteration 29. Train: 1.163822, test: 1.411471.
+Iteration 30. Train: 1.163830, test: 1.411509.
+==============================
+
+==============================
+Prediction with our model
+Train: 746.436157, test: 3079.175621.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 746.436157, test: 3079.175621.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3182.646041.
+Baseline prediction - artist average: 3246.275976.
+Baseline prediction - weighted user and artist average: 3116.229788.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 50.000000, lambdaM: 50.000000.
+Iteration 0. Train: 5.661653, test: 5.707692.
+Iteration 1. Train: 1.029614, test: 1.508665.
+Iteration 2. Train: 0.949473, test: 1.421418.
+Iteration 3. Train: 0.934591, test: 1.390662.
+Iteration 4. Train: 0.930666, test: 1.375736.
+Iteration 5. Train: 0.929257, test: 1.367020.
+Iteration 6. Train: 0.928650, test: 1.361360.
+Iteration 7. Train: 0.928379, test: 1.357407.
+Iteration 8. Train: 0.928289, test: 1.354498.
+Iteration 9. Train: 0.928311, test: 1.352270.
+Iteration 10. Train: 0.928406, test: 1.350510.
+Iteration 11. Train: 0.928547, test: 1.349086.
+Iteration 12. Train: 0.928714, test: 1.347913.
+Iteration 13. Train: 0.928898, test: 1.346940.
+Iteration 14. Train: 0.929089, test: 1.346130.
+Iteration 15. Train: 0.929284, test: 1.345456.
+Iteration 16. Train: 0.929478, test: 1.344898.
+Iteration 17. Train: 0.929670, test: 1.344436.
+Iteration 18. Train: 0.929860, test: 1.344057.
+Iteration 19. Train: 0.930046, test: 1.343746.
+Iteration 20. Train: 0.930230, test: 1.343493.
+Iteration 21. Train: 0.930411, test: 1.343289.
+Iteration 22. Train: 0.930589, test: 1.343125.
+Iteration 23. Train: 0.930764, test: 1.342996.
+Iteration 24. Train: 0.930936, test: 1.342896.
+Iteration 25. Train: 0.931104, test: 1.342822.
+Iteration 26. Train: 0.931268, test: 1.342769.
+Iteration 27. Train: 0.931429, test: 1.342735.
+Iteration 28. Train: 0.931585, test: 1.342715.
+Iteration 29. Train: 0.931736, test: 1.342708.
+Iteration 30. Train: 0.931883, test: 1.342710.
+==============================
+
+==============================
+Prediction with our model
+Train: 233.122482, test: 3087.272853.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4147.267547, test: 3116.229788.
+==============================
+
+==============================
+Average prediction with our model
+Train: 233.122482, test: 3087.272853.
+==============================
+>> close all
+>> playground
+
+Trial 1
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2792.662847.
+Baseline prediction - artist average: 2865.662797.
+Baseline prediction - weighted user and artist average: 2726.788491.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4181.626872, test: 2726.788491.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.625561, test: 5.632409.
+Iteration 1. Train: 1.139368, test: 1.488045.
+Iteration 2. Train: 1.111745, test: 1.427510.
+Iteration 3. Train: 1.119572, test: 1.412296.
+Iteration 4. Train: 1.126389, test: 1.408353.
+Iteration 5. Train: 1.130862, test: 1.407441.
+Iteration 6. Train: 1.133789, test: 1.407441.
+Iteration 7. Train: 1.135765, test: 1.407725.
+Iteration 8. Train: 1.137160, test: 1.408098.
+Iteration 9. Train: 1.138195, test: 1.408496.
+Iteration 10. Train: 1.138997, test: 1.408893.
+Iteration 11. Train: 1.139642, test: 1.409275.
+Iteration 12. Train: 1.140173, test: 1.409634.
+Iteration 13. Train: 1.140619, test: 1.409964.
+Iteration 14. Train: 1.141000, test: 1.410265.
+Iteration 15. Train: 1.141327, test: 1.410536.
+Iteration 16. Train: 1.141610, test: 1.410780.
+Iteration 17. Train: 1.141857, test: 1.410998.
+Iteration 18. Train: 1.142072, test: 1.411194.
+Iteration 19. Train: 1.142261, test: 1.411368.
+Iteration 20. Train: 1.142427, test: 1.411524.
+Iteration 21. Train: 1.142572, test: 1.411663.
+Iteration 22. Train: 1.142700, test: 1.411787.
+Iteration 23. Train: 1.142812, test: 1.411897.
+Iteration 24. Train: 1.142911, test: 1.411995.
+Iteration 25. Train: 1.142997, test: 1.412081.
+Iteration 26. Train: 1.143073, test: 1.412158.
+Iteration 27. Train: 1.143140, test: 1.412226.
+Iteration 28. Train: 1.143198, test: 1.412286.
+Iteration 29. Train: 1.143249, test: 1.412338.
+Iteration 30. Train: 1.143294, test: 1.412385.
+==============================
+
+==============================
+Prediction with our model
+Train: 637.445389, test: 2716.629903.
+==============================
+
+Trial 2
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4195.721875.
+Baseline prediction - artist average: 4239.572231.
+Baseline prediction - weighted user and artist average: 4155.001049.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4048.560806, test: 4155.001049.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.599835, test: 5.637020.
+Iteration 1. Train: 1.138826, test: 1.472395.
+Iteration 2. Train: 1.113863, test: 1.406377.
+Iteration 3. Train: 1.121394, test: 1.393250.
+Iteration 4. Train: 1.127411, test: 1.390062.
+Iteration 5. Train: 1.131367, test: 1.389481.
+Iteration 6. Train: 1.134076, test: 1.389723.
+Iteration 7. Train: 1.136036, test: 1.390222.
+Iteration 8. Train: 1.137518, test: 1.390782.
+Iteration 9. Train: 1.138679, test: 1.391335.
+Iteration 10. Train: 1.139614, test: 1.391854.
+Iteration 11. Train: 1.140382, test: 1.392330.
+Iteration 12. Train: 1.141021, test: 1.392762.
+Iteration 13. Train: 1.141560, test: 1.393150.
+Iteration 14. Train: 1.142017, test: 1.393499.
+Iteration 15. Train: 1.142409, test: 1.393812.
+Iteration 16. Train: 1.142746, test: 1.394092.
+Iteration 17. Train: 1.143037, test: 1.394342.
+Iteration 18. Train: 1.143289, test: 1.394566.
+Iteration 19. Train: 1.143510, test: 1.394768.
+Iteration 20. Train: 1.143702, test: 1.394949.
+Iteration 21. Train: 1.143871, test: 1.395112.
+Iteration 22. Train: 1.144019, test: 1.395259.
+Iteration 23. Train: 1.144149, test: 1.395392.
+Iteration 24. Train: 1.144264, test: 1.395514.
+Iteration 25. Train: 1.144365, test: 1.395624.
+Iteration 26. Train: 1.144454, test: 1.395725.
+Iteration 27. Train: 1.144533, test: 1.395818.
+Iteration 28. Train: 1.144603, test: 1.395903.
+Iteration 29. Train: 1.144665, test: 1.395982.
+Iteration 30. Train: 1.144719, test: 1.396055.
+==============================
+
+==============================
+Prediction with our model
+Train: 639.076966, test: 4158.501785.
+==============================
+
+Trial 3
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 4899.680982.
+Baseline prediction - artist average: 4915.667198.
+Baseline prediction - weighted user and artist average: 4852.753503.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 3962.964548, test: 4852.753503.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.672517, test: 5.714186.
+Iteration 1. Train: 1.140143, test: 1.478170.
+Iteration 2. Train: 1.113113, test: 1.423285.
+Iteration 3. Train: 1.120128, test: 1.411383.
+Iteration 4. Train: 1.126362, test: 1.409078.
+Iteration 5. Train: 1.130412, test: 1.408972.
+Iteration 6. Train: 1.133089, test: 1.409400.
+Iteration 7. Train: 1.134904, test: 1.409887.
+Iteration 8. Train: 1.136194, test: 1.410335.
+Iteration 9. Train: 1.137150, test: 1.410729.
+Iteration 10. Train: 1.137888, test: 1.411075.
+Iteration 11. Train: 1.138473, test: 1.411376.
+Iteration 12. Train: 1.138947, test: 1.411642.
+Iteration 13. Train: 1.139337, test: 1.411876.
+Iteration 14. Train: 1.139663, test: 1.412085.
+Iteration 15. Train: 1.139936, test: 1.412273.
+Iteration 16. Train: 1.140167, test: 1.412443.
+Iteration 17. Train: 1.140363, test: 1.412598.
+Iteration 18. Train: 1.140529, test: 1.412741.
+Iteration 19. Train: 1.140670, test: 1.412872.
+Iteration 20. Train: 1.140789, test: 1.412994.
+Iteration 21. Train: 1.140890, test: 1.413107.
+Iteration 22. Train: 1.140975, test: 1.413211.
+Iteration 23. Train: 1.141047, test: 1.413308.
+Iteration 24. Train: 1.141106, test: 1.413398.
+Iteration 25. Train: 1.141156, test: 1.413481.
+Iteration 26. Train: 1.141196, test: 1.413559.
+Iteration 27. Train: 1.141229, test: 1.413630.
+Iteration 28. Train: 1.141255, test: 1.413697.
+Iteration 29. Train: 1.141276, test: 1.413758.
+Iteration 30. Train: 1.141292, test: 1.413815.
+==============================
+
+==============================
+Prediction with our model
+Train: 636.455239, test: 4854.114749.
+==============================
+
+Trial 4
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2327.015926.
+Baseline prediction - artist average: 2382.700447.
+Baseline prediction - weighted user and artist average: 2248.132651.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4209.628904, test: 2248.132651.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.649172, test: 5.755885.
+Iteration 1. Train: 1.140215, test: 1.471251.
+Iteration 2. Train: 1.113862, test: 1.418554.
+Iteration 3. Train: 1.121844, test: 1.408491.
+Iteration 4. Train: 1.128191, test: 1.406336.
+Iteration 5. Train: 1.132153, test: 1.406007.
+Iteration 6. Train: 1.134731, test: 1.406200.
+Iteration 7. Train: 1.136506, test: 1.406534.
+Iteration 8. Train: 1.137795, test: 1.406884.
+Iteration 9. Train: 1.138770, test: 1.407210.
+Iteration 10. Train: 1.139534, test: 1.407502.
+Iteration 11. Train: 1.140147, test: 1.407761.
+Iteration 12. Train: 1.140649, test: 1.407987.
+Iteration 13. Train: 1.141067, test: 1.408185.
+Iteration 14. Train: 1.141418, test: 1.408357.
+Iteration 15. Train: 1.141716, test: 1.408506.
+Iteration 16. Train: 1.141970, test: 1.408637.
+Iteration 17. Train: 1.142188, test: 1.408750.
+Iteration 18. Train: 1.142375, test: 1.408848.
+Iteration 19. Train: 1.142536, test: 1.408934.
+Iteration 20. Train: 1.142675, test: 1.409008.
+Iteration 21. Train: 1.142796, test: 1.409073.
+Iteration 22. Train: 1.142900, test: 1.409130.
+Iteration 23. Train: 1.142991, test: 1.409179.
+Iteration 24. Train: 1.143069, test: 1.409223.
+Iteration 25. Train: 1.143137, test: 1.409261.
+Iteration 26. Train: 1.143196, test: 1.409295.
+Iteration 27. Train: 1.143248, test: 1.409325.
+Iteration 28. Train: 1.143292, test: 1.409352.
+Iteration 29. Train: 1.143330, test: 1.409376.
+Iteration 30. Train: 1.143364, test: 1.409397.
+==============================
+
+==============================
+Prediction with our model
+Train: 636.617312, test: 2341.522914.
+==============================
+
+Trial 5
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2276.632553.
+Baseline prediction - artist average: 2333.806310.
+Baseline prediction - weighted user and artist average: 2184.718877.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4213.499929, test: 2184.718877.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.667499, test: 5.582778.
+Iteration 1. Train: 1.142803, test: 1.476001.
+Iteration 2. Train: 1.117023, test: 1.415843.
+Iteration 3. Train: 1.123649, test: 1.403547.
+Iteration 4. Train: 1.128673, test: 1.400704.
+Iteration 5. Train: 1.131841, test: 1.400224.
+Iteration 6. Train: 1.133933, test: 1.400444.
+Iteration 7. Train: 1.135402, test: 1.400869.
+Iteration 8. Train: 1.136494, test: 1.401334.
+Iteration 9. Train: 1.137345, test: 1.401787.
+Iteration 10. Train: 1.138032, test: 1.402211.
+Iteration 11. Train: 1.138601, test: 1.402602.
+Iteration 12. Train: 1.139081, test: 1.402960.
+Iteration 13. Train: 1.139490, test: 1.403286.
+Iteration 14. Train: 1.139841, test: 1.403583.
+Iteration 15. Train: 1.140145, test: 1.403851.
+Iteration 16. Train: 1.140408, test: 1.404094.
+Iteration 17. Train: 1.140637, test: 1.404313.
+Iteration 18. Train: 1.140836, test: 1.404511.
+Iteration 19. Train: 1.141009, test: 1.404690.
+Iteration 20. Train: 1.141161, test: 1.404851.
+Iteration 21. Train: 1.141293, test: 1.404996.
+Iteration 22. Train: 1.141409, test: 1.405128.
+Iteration 23. Train: 1.141511, test: 1.405246.
+Iteration 24. Train: 1.141600, test: 1.405353.
+Iteration 25. Train: 1.141678, test: 1.405449.
+Iteration 26. Train: 1.141747, test: 1.405536.
+Iteration 27. Train: 1.141807, test: 1.405614.
+Iteration 28. Train: 1.141859, test: 1.405684.
+Iteration 29. Train: 1.141905, test: 1.405747.
+Iteration 30. Train: 1.141945, test: 1.405803.
+==============================
+
+==============================
+Prediction with our model
+Train: 637.567646, test: 2124.942595.
+==============================
+
+Trial 6
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2404.725767.
+Baseline prediction - artist average: 2440.163478.
+Baseline prediction - weighted user and artist average: 2306.481216.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4205.167433, test: 2306.481216.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.776558, test: 5.705777.
+Iteration 1. Train: 1.143078, test: 1.459479.
+Iteration 2. Train: 1.116257, test: 1.402446.
+Iteration 3. Train: 1.123004, test: 1.391642.
+Iteration 4. Train: 1.128621, test: 1.389044.
+Iteration 5. Train: 1.132309, test: 1.389103.
+Iteration 6. Train: 1.134751, test: 1.389573.
+Iteration 7. Train: 1.136444, test: 1.390280.
+Iteration 8. Train: 1.137671, test: 1.390969.
+Iteration 9. Train: 1.138602, test: 1.391625.
+Iteration 10. Train: 1.139331, test: 1.392221.
+Iteration 11. Train: 1.139921, test: 1.392757.
+Iteration 12. Train: 1.140409, test: 1.393235.
+Iteration 13. Train: 1.140819, test: 1.393660.
+Iteration 14. Train: 1.141168, test: 1.394039.
+Iteration 15. Train: 1.141469, test: 1.394378.
+Iteration 16. Train: 1.141731, test: 1.394682.
+Iteration 17. Train: 1.141959, test: 1.394955.
+Iteration 18. Train: 1.142160, test: 1.395202.
+Iteration 19. Train: 1.142336, test: 1.395425.
+Iteration 20. Train: 1.142491, test: 1.395627.
+Iteration 21. Train: 1.142627, test: 1.395812.
+Iteration 22. Train: 1.142748, test: 1.395979.
+Iteration 23. Train: 1.142853, test: 1.396132.
+Iteration 24. Train: 1.142946, test: 1.396271.
+Iteration 25. Train: 1.143027, test: 1.396398.
+Iteration 26. Train: 1.143098, test: 1.396513.
+Iteration 27. Train: 1.143160, test: 1.396619.
+Iteration 28. Train: 1.143213, test: 1.396715.
+Iteration 29. Train: 1.143260, test: 1.396802.
+Iteration 30. Train: 1.143300, test: 1.396882.
+==============================
+
+==============================
+Prediction with our model
+Train: 637.689761, test: 2273.105961.
+==============================
+
+Trial 7
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2828.492577.
+Baseline prediction - artist average: 2887.610988.
+Baseline prediction - weighted user and artist average: 2754.522908.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4176.275010, test: 2754.522908.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.631965, test: 5.631540.
+Iteration 1. Train: 1.138612, test: 1.484424.
+Iteration 2. Train: 1.113813, test: 1.424005.
+Iteration 3. Train: 1.121517, test: 1.412510.
+Iteration 4. Train: 1.127737, test: 1.410013.
+Iteration 5. Train: 1.131805, test: 1.409690.
+Iteration 6. Train: 1.134555, test: 1.409975.
+Iteration 7. Train: 1.136500, test: 1.410407.
+Iteration 8. Train: 1.137936, test: 1.410845.
+Iteration 9. Train: 1.139036, test: 1.411247.
+Iteration 10. Train: 1.139905, test: 1.411607.
+Iteration 11. Train: 1.140609, test: 1.411928.
+Iteration 12. Train: 1.141191, test: 1.412213.
+Iteration 13. Train: 1.141680, test: 1.412469.
+Iteration 14. Train: 1.142095, test: 1.412699.
+Iteration 15. Train: 1.142451, test: 1.412906.
+Iteration 16. Train: 1.142759, test: 1.413094.
+Iteration 17. Train: 1.143026, test: 1.413264.
+Iteration 18. Train: 1.143260, test: 1.413419.
+Iteration 19. Train: 1.143465, test: 1.413560.
+Iteration 20. Train: 1.143645, test: 1.413689.
+Iteration 21. Train: 1.143804, test: 1.413806.
+Iteration 22. Train: 1.143945, test: 1.413913.
+Iteration 23. Train: 1.144069, test: 1.414010.
+Iteration 24. Train: 1.144179, test: 1.414098.
+Iteration 25. Train: 1.144277, test: 1.414178.
+Iteration 26. Train: 1.144364, test: 1.414251.
+Iteration 27. Train: 1.144441, test: 1.414317.
+Iteration 28. Train: 1.144509, test: 1.414376.
+Iteration 29. Train: 1.144570, test: 1.414430.
+Iteration 30. Train: 1.144623, test: 1.414478.
+==============================
+
+==============================
+Prediction with our model
+Train: 640.370081, test: 2750.156151.
+==============================
+
+Trial 8
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2557.987722.
+Baseline prediction - artist average: 2633.364653.
+Baseline prediction - weighted user and artist average: 2485.588860.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4194.347872, test: 2485.588860.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.651003, test: 5.719287.
+Iteration 1. Train: 1.138576, test: 1.468938.
+Iteration 2. Train: 1.112709, test: 1.414831.
+Iteration 3. Train: 1.119958, test: 1.402345.
+Iteration 4. Train: 1.126041, test: 1.398983.
+Iteration 5. Train: 1.130212, test: 1.398279.
+Iteration 6. Train: 1.133098, test: 1.398303.
+Iteration 7. Train: 1.135205, test: 1.398602.
+Iteration 8. Train: 1.136795, test: 1.398936.
+Iteration 9. Train: 1.138041, test: 1.399269.
+Iteration 10. Train: 1.139040, test: 1.399578.
+Iteration 11. Train: 1.139856, test: 1.399862.
+Iteration 12. Train: 1.140530, test: 1.400119.
+Iteration 13. Train: 1.141091, test: 1.400352.
+Iteration 14. Train: 1.141560, test: 1.400561.
+Iteration 15. Train: 1.141955, test: 1.400749.
+Iteration 16. Train: 1.142287, test: 1.400917.
+Iteration 17. Train: 1.142569, test: 1.401068.
+Iteration 18. Train: 1.142807, test: 1.401203.
+Iteration 19. Train: 1.143010, test: 1.401324.
+Iteration 20. Train: 1.143183, test: 1.401432.
+Iteration 21. Train: 1.143331, test: 1.401530.
+Iteration 22. Train: 1.143458, test: 1.401618.
+Iteration 23. Train: 1.143567, test: 1.401698.
+Iteration 24. Train: 1.143661, test: 1.401770.
+Iteration 25. Train: 1.143742, test: 1.401836.
+Iteration 26. Train: 1.143812, test: 1.401896.
+Iteration 27. Train: 1.143873, test: 1.401950.
+Iteration 28. Train: 1.143926, test: 1.402000.
+Iteration 29. Train: 1.143971, test: 1.402046.
+Iteration 30. Train: 1.144011, test: 1.402089.
+==============================
+
+==============================
+Prediction with our model
+Train: 640.012076, test: 2440.507095.
+==============================
+
+Trial 9
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 2832.442055.
+Baseline prediction - artist average: 2886.364328.
+Baseline prediction - weighted user and artist average: 2764.365011.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4175.664260, test: 2764.365011.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.716671, test: 5.649511.
+Iteration 1. Train: 1.143345, test: 1.479225.
+Iteration 2. Train: 1.112340, test: 1.421143.
+Iteration 3. Train: 1.119588, test: 1.407635.
+Iteration 4. Train: 1.126174, test: 1.404227.
+Iteration 5. Train: 1.130648, test: 1.403467.
+Iteration 6. Train: 1.133706, test: 1.403465.
+Iteration 7. Train: 1.135875, test: 1.403689.
+Iteration 8. Train: 1.137471, test: 1.403974.
+Iteration 9. Train: 1.138686, test: 1.404263.
+Iteration 10. Train: 1.139639, test: 1.404540.
+Iteration 11. Train: 1.140402, test: 1.404799.
+Iteration 12. Train: 1.141023, test: 1.405039.
+Iteration 13. Train: 1.141537, test: 1.405259.
+Iteration 14. Train: 1.141967, test: 1.405462.
+Iteration 15. Train: 1.142329, test: 1.405648.
+Iteration 16. Train: 1.142636, test: 1.405818.
+Iteration 17. Train: 1.142899, test: 1.405974.
+Iteration 18. Train: 1.143125, test: 1.406116.
+Iteration 19. Train: 1.143320, test: 1.406245.
+Iteration 20. Train: 1.143489, test: 1.406363.
+Iteration 21. Train: 1.143636, test: 1.406470.
+Iteration 22. Train: 1.143764, test: 1.406568.
+Iteration 23. Train: 1.143875, test: 1.406656.
+Iteration 24. Train: 1.143973, test: 1.406737.
+Iteration 25. Train: 1.144059, test: 1.406810.
+Iteration 26. Train: 1.144134, test: 1.406876.
+Iteration 27. Train: 1.144199, test: 1.406937.
+Iteration 28. Train: 1.144257, test: 1.406992.
+Iteration 29. Train: 1.144307, test: 1.407042.
+Iteration 30. Train: 1.144351, test: 1.407088.
+==============================
+
+==============================
+Prediction with our model
+Train: 636.155200, test: 2762.174889.
+==============================
+
+Trial 10
+The validity test was successfull!
+==============================
+Number of ratings in the train dataset: 62655.
+Number of ratings in the test dataset: 6962.
+==============================
+
+==============================
+Baseline prediction - user average: 3470.306713.
+Baseline prediction - artist average: 3548.832456.
+Baseline prediction - weighted user and artist average: 3430.982750.
+==============================
+
+==============================
+Baseline prediction - weighted user and artist average
+Train: 4122.784041, test: 3430.982750.
+==============================
+
+==============================
+Output from our model
+Number of latent factors: 30.
+Number of iterations: 30.
+LambdaU: 200.000000, lambdaM: 200.000000.
+Iteration 0. Train: 5.682923, test: 5.659561.
+Iteration 1. Train: 1.145062, test: 1.466214.
+Iteration 2. Train: 1.116996, test: 1.412361.
+Iteration 3. Train: 1.123814, test: 1.398647.
+Iteration 4. Train: 1.129605, test: 1.394880.
+Iteration 5. Train: 1.133361, test: 1.393929.
+Iteration 6. Train: 1.135867, test: 1.393835.
+Iteration 7. Train: 1.137634, test: 1.393999.
+Iteration 8. Train: 1.138942, test: 1.394225.
+Iteration 9. Train: 1.139952, test: 1.394457.
+Iteration 10. Train: 1.140757, test: 1.394683.
+Iteration 11. Train: 1.141418, test: 1.394903.
+Iteration 12. Train: 1.141971, test: 1.395119.
+Iteration 13. Train: 1.142444, test: 1.395333.
+Iteration 14. Train: 1.142852, test: 1.395544.
+Iteration 15. Train: 1.143207, test: 1.395751.
+Iteration 16. Train: 1.143519, test: 1.395954.
+Iteration 17. Train: 1.143794, test: 1.396152.
+Iteration 18. Train: 1.144036, test: 1.396343.
+Iteration 19. Train: 1.144251, test: 1.396526.
+Iteration 20. Train: 1.144441, test: 1.396700.
+Iteration 21. Train: 1.144610, test: 1.396866.
+Iteration 22. Train: 1.144760, test: 1.397022.
+Iteration 23. Train: 1.144892, test: 1.397168.
+Iteration 24. Train: 1.145010, test: 1.397305.
+Iteration 25. Train: 1.145115, test: 1.397432.
+Iteration 26. Train: 1.145207, test: 1.397549.
+Iteration 27. Train: 1.145290, test: 1.397658.
+Iteration 28. Train: 1.145363, test: 1.397757.
+Iteration 29. Train: 1.145428, test: 1.397849.
+Iteration 30. Train: 1.145486, test: 1.397933.
+==============================
+
+==============================
+Prediction with our model
+Train: 641.431393, test: 3362.893615.
+==============================
+
+==============================
+Average prediction with baseline
+Train: 4149.051968, test: 2990.933532.
+==============================
+
+==============================
+Average prediction with our model
+Train: 638.282106, test: 2978.454966.
+==============================
+>> 
