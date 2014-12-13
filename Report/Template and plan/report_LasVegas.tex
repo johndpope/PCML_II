@@ -1,0 +1,212 @@
+\documentclass{article} % For LaTeX2e
+% We will use NIPS submission format
+\usepackage{nips13submit_e,times}
+% for hyperlinks
+\usepackage{hyperref}
+\usepackage{url}
+% For figures
+\usepackage{graphicx} 
+\usepackage{subfigure} 
+% math packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsopn}
+\usepackage{ifthen}
+\usepackage{natbib}
+\usepackage{epstopdf}
+
+% ///////////////////////////////////////////////////////////
+% //////////////////// Comments from Emti ///////////////////
+% ///////////////////////////////////////////////////////////
+%
+%- Your report should not be longer than 6 pages!
+%- Your report should include the details of your work, e.g. you can include the following 
+%points:
+%  - What feature transformation or data cleaning did you try? And why?
+%  - What methods you applied? Why?
+%  - What worked and what did not? Why do you think are the reasons behind that?
+%  - Why did you choose the method that you choose?
+%- You should include complete details about each algorithm you tried, e.g. what lambda values 
+%you tried for Ridge regression? What feature transformation you tried? How many folds did you 
+%use for cross-validation? etc.
+%- You should include figures or tables supporting your text and your conclusions.
+%- Make sure that the captions are included in the figure/tables. A caption should clearly 
+%describe the content of its corresponding figure/table.
+%- Please label your figures and make sure that the labels and legends are large enough to be 
+%read clearly.
+%- Make sure that the tick marks and labels are large enough to be clearly read.
+%- Your sentences in the report should be clear, concise, and direct.
+%- You should clearly state your conclusions.
+%- You will loose marks if you did not do things mentioned above.
+%- You will loose marks if your written text is vague and not understandable!
+%
+% ///////////////////////////////////////////////////////////
+% ////////////////////// Report outline /////////////////////
+% ///////////////////////////////////////////////////////////
+%
+%Abstract
+%- describe the problem, the proposed solution with a little justification, and the results (4-5 sentences)
+%
+%1. Introdction
+%- general introduction about the project and the learning outcomes (4-5 sentences)
+%
+%
+%2. Regression
+%- a short discussion about regression (2-3 sentences)
+%
+%2.1. Data description
+%- description of the train and test data for regression
+%
+%2.2. Data visualization and cleaning
+%- outlier detection and removal (add a histogram of y to show the outliers)
+%- (add Andrii's graph which shows the correlation between the input and output variables) - table with the e.g. 5 most significant (most correlated) features
+%- data separation (X_30 > -10.5 and X_30 <= -10.5)
+%
+%2.3. Feature transformations
+%- methodology (how do we normalize)
+%- choice of different basis functions and how do they influence our predictions for left/right 
+%dataset (x^3 for the right dataset) - add a figure/table to compare it with no transformation
+%- why PCA is not a good choice (graph of eigenvalues)
+%
+%2.4. Experimental results
+%- choose a baseline
+%- (procedure and results obtained by using gradient desc. (also, why is it not good/sufficient))
+%- procedure and results obtained by using least squares (also, why is it not good/sufficient)
+%- procedure and results obtained by using ridge regression (also, why is it not good/sufficient)
+%- (add a fancy regression method)
+%- learning curve - plot how the train/test errors change (mean + variance with multiple seeds) as we assign more data to training (keep the test data at e.g. 20%)
+%- Fig: train/test errors for different train data proportions (least squares + ridge regression)
+%- Fig: train/test errors for different train lambda (ridge regression)
+%- fitting one linear model for both datasets (left and right) could work but will be more complicated
+%
+%
+%3. Classification
+%- a short discussion about classification (2-3 sentences)
+%
+%3.1. Data description
+%- description (N, D, cathegorical data) of the train and test data for classification
+%
+%3.2. Data visualization and cleaning
+%- outlier detection and removal (add a histogram of y to show the outliers)
+%- (add Andrii's graph which shows the correlation between the input and output variables)
+%
+%3.3. Feature transformations
+%- choice of different basis functions and how they influence our predictions - a table
+%- (why PCA is not a good choice + graph of eigenvalues)
+%
+%3.4. Experimental results
+%- choose a baseline
+%- (procedure and results obtained by using linear regression (why is it not good))
+%- procedure and results obtained by using logistic regression (why is it not good/sufficient)
+%- procedure and results obtained by using penLogistic regression (why is it not good/sufficient)
+%- (add a fancy classification method)
+%- learning curve - plot how the train/test errors change (mean + variance with multiple seeds) 
+%as we assign more data to training (keep the test data at e.g. 20%)
+%- Fig: train/test errors for different train data proportions (least squares + ridge regression)
+%- Fig: train/test errors for different train lambda (ridge regression)
+%
+%
+%4. Conclusion
+%- paragraph about the conclusions from regression (4-5 sentences)
+%- paragraph about the conclusions from classification (4-5 sentences)
+%- state the limitations of these approaches and give directions for future work
+
+\title{Project-II by Group LasVegas}
+
+\author{
+Igor Kulev \\
+EPFL \And
+Andrii Maksai \\
+EPFL \And
+Marjan Shahpaski \\
+EPFL \\\\
+\texttt{\{igor.kulev, andrii.maksai, marjan.shahpaski\}@epfl.ch}\\
+}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\nipsfinalcopy 
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report provides a summary of our work done for the second project of the PCML course. The project consists of solving two problems. In the first problem we need to build a system that can recognize whether a person is present in an image or not. In the second problem we need to build a music recommendation system that can predict the number of times a particular user will listen to a particular song.
+\end{abstract}
+
+\section{Introduction}
+
+The second project of the Pattern Classification and Machine Learning course focuses on applying machine learning techniques to real-world data. Two different datasets were therefore provided, one for each of the problems. The ultimate goal is to train a model which will be able to produce accurate response predictions to unseen input data. We have applied different techniques for both problems in order to produce relavant predictions. The tasks involved in solving these problems are data transformation and applying different models to fit our data. For the person detection problem we have used two different dimensionality reduction techniques: PCA and t-SNE, and few different classifiers: sparse logistic regression, neural networks and Support Vector Machines (SVM). For the music recommendation problem we have built a baseline model and we have substracted the baseline predictions from the true values. After that we have used two different types of methods for generating predictions: neighbour-based methods and matrix factorization methods.
+
+\section{Music recommendation problem-Andii}
+
+We can put few sentences here what is the main challenge for this problem. We can describe the two types of problems: weak and strong generalization.
+
+\subsection{Data Description-Andrii}
+
+We can plot the <log of the counts vs users, the figure is give on moodle>(FIGURE-Andrii). <histogram of all ratings after transformation>(FIGURE-Andrii). We can give some statistics about the data set.
+
+\subsection{Models-Andrii}
+
+We can include the formulas for each model here. ALS with friendship factor.
+
+\subsubsection{Baseline-Andrii}
+
+We can present few different baselines. We can plot the learning curve.
+
+\subsubsection{Matrix factorization techniques-Igor}
+
+We can explain the different models that can be used here. We can explain that if we didn't substract the baseline, we get very worse results. We can plot the test error as a function of the number of features for fixed value of lambda (FIGURE).
+
+\subsubsection{Neighbourhood-based methods-Andrii}
+
+We can explain the different models that can be used here. We can explain that if we didn't substract the baseline, we get very worse results. We can plot the test error as a function of the number of features for fixed value of lambda (FIGURE).
+
+\subsection{Results}
+
+Andrii. Method comparison. Heatmap.
+
+<fixed lambda, different number of latent factors versus test error, ALS with and without friendship. We can plot the train and test error. We will have four different figures.>(FIGURE-Igor). <2 different box-plots for weak and strong generalization>(FIGURE-Andrii). <Learning curve for the baseline method. Different amount of training data versus fixed training data. Weak generalization. On the same plot for strong generalization. 4 curves.>(FIGURE-Igor) <Predicted versus true values. KNN weak>(FIGURE-Igor). <Heatmap. Average error for different types of users and items.>(FIGURE-Andrii)
+
+\section{Person detection problem}
+
+Regression models try to establish the relationships between the input and the output variables(s). It is therefore used for predicting future outcomes for new (unobserved) data, or for interpreting the underlying connection(s) between the input and the output variables. In this project we will use linear regression models, which assume a linear relation between the inputs and the outputs. We will also use feature transforms which allow non-linear predictions.
+
+\subsection{Data Description}
+
+<Correlation plot. Pedestrian vs. non-pedestrian.>(FIGURE)
+
+\subsection{Data transformation}
+
+wefwe
+
+\subsubsection{PCA-Andrii}
+
+<2 main dimensions of PCA>(FIGURE)
+
+\subsubsection{t-SNE-Andii}
+
+<2 main dimensions of t-SNE. With borders.>(FIGURE)
+
+\subsection{Classification models}
+
+ewfweg
+
+\subsection{Results}
+
+<Learning curve for sparse logistic regression>(FIGURE). <Lambda curve>(FIGURE). <PCA, different number of dimensions vs. prediction accuracy>(FIGURE). <ROC curve. All algorithms>(FIGURE). <2 worst misclassification pictures for pedestrians and not-pedestrians>(FIGURE)
+
+
+
+\section{Conclusion}
+
+fgfdgdfgdgdfgdfg
+
+\end{document}
