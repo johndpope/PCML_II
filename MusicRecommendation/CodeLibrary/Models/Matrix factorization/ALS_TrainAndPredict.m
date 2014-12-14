@@ -85,4 +85,9 @@ function [ TrainPredicted, TestPredicted ] = ...
     TestPredicted = Ytest;
     TestPredicted(find(Ite > 0)) = sum(U(:, IRt) .* M(:, JRt));
     
+ %   shift = 5;
+    
+ %   TrainPredicted(find(abs(TrainPredicted) > 0 & TrainPredicted < shift)) = shift;
+ %   TestPredicted(find(abs(TestPredicted) > 0 & TestPredicted < shift)) = shift;
+    
 end

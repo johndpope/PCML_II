@@ -1,5 +1,6 @@
 function [ meanAll, meanU, meanI, Y_te] = subtractBaseline( Y_te, I_te, Y_tr, I_tr) 
     meanAll = full(mean(mean(Y_tr(I_tr))));
+    Y_tr(I_tr) = Y_tr(I_tr) - meanAll;
     Y_te(I_te) = Y_te(I_te) - meanAll;
     
     meanU = zeros(size(Y_tr, 1), 1);
@@ -12,11 +13,11 @@ function [ meanAll, meanU, meanI, Y_te] = subtractBaseline( Y_te, I_te, Y_tr, I_
     end
    
 
-    for i=1:size(Y_tr, 2)
-        idx = find(I_tr(:,i) > 0);
-        meanI(i) = full(mean(Y_tr(idx, i)));
-        Y_tr(idx,i) = Y_tr(idx,i) - meanI(i);
-    end
+%     for i=1:size(Y_tr, 2)
+%         idx = find(I_tr(:,i) > 0);
+%         meanI(i) = full(mean(Y_tr(idx, i)));
+%         Y_tr(idx,i) = Y_tr(idx,i) - meanI(i);
+%     end
     
     meanU(isnan(meanU)) = 0;
     meanI(isnan(meanI)) = 0;

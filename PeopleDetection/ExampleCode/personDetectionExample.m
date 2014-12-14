@@ -20,7 +20,10 @@ addpath(genpath('Parametric t-SNE/'));
     
 % Load both features and training images
 load 'Data/train_feats';
+feats_tr = feats;
 load 'Data/train_imgs';
+load 'Data/test_feats';
+feats_te = feats;
 
 %% --browse through the images, and show the feature visualization beside
 %  -- You should explore the features for the positive and negative
@@ -40,11 +43,34 @@ end
 
 %% -- Generate feature vectors (so each one is a row of X)
 fprintf('Generating feature vectors..\n');
-D = numel(feats{1});  % feature dimensionality
-X = zeros([length(imgs) D]);
+D = numel(feats_tr{1});  % feature dimensionality
+X_tr = zeros([length(feats_tr) D]);
 
-for i=1:length(imgs)
-    X(i,:) = feats{i}(:);  % convert to a vector of D dimensions
+for i=1:length(feats_tr)
+    X_tr(i,:) = feats_tr{i}(:);  % convert to a vector of D dimensions
+end
+
+fprintf('Generating feature vectors..\n');
+D = numel(feats_te{1});  % feature dimensionality
+X_te = zeros([length(feats_te) D]);
+
+for i=1:length(feats_te)
+    X_te(i,:) = feats_te{i}(:);  % convert to a vector of D dimensions
+end
+
+%% Read data back
+mat = csvread('output.mat');
+
+fold = mat(:,1);
+pred = mat(:,2);
+real = mat(:,3);
+
+tprAvg = zeros();
+for i=1:max(fold)
+    p = pred(find(fold == i));
+    r = real(find(fold == i));
+    [tprAtWP,auc,fpr,tpr] = fastROC(r == 1, p, 0); 
+    tprAvg(i) = tprAtWP;
 end
 
 %% -- Example: split half and half into train/test
@@ -59,7 +85,7 @@ Te.X = X(Te.idxs,:);
 Te.y = labels(Te.idxs);
 
 %% Results based on the t-SNE - just plotting
-
+tic;
 sub = X(1:1000,:);
 lab = labels(1:1000);
 
