@@ -27,20 +27,9 @@
 % required varargin P and maxValue
 function [ TrainPredicted, TestPredicted ] = ...
     stackAlgorithm(...
-    Gtrain,...      % Matrix of user relations in train set
-    ...             %
     Ytrain,...      % Matrix of user - artist listen counts in train    
-    ...             % 
-    Gtrain_test,... % Matrix of user relations between train and test set
-    ...             %
-    Gtest_train,... % Matrix of user relations between test and train set
-    ...             %
-    Gtest,...       % Matrix of user relations in test set
-    ...             %
     Ytest,...       % Indices, for which we are insterested in answer
-    ...             %
-    varargin...     %
-)
+    I_tr, I_te)
 
  % Transform the data
  % Subtract baseline
@@ -51,20 +40,17 @@ function [ TrainPredicted, TestPredicted ] = ...
  Y_tr_0 = Ytrain;
  Y_te_0 = Ytest;
  
- I_tr = (Y_tr_0 > 0);
- I_te = (Y_te_0 > 0);
- 
  % Transform the data
 % [muU, stdU, Y_tr_1] = transformData(Y_tr_0, I_tr, Y_tr_0, I_tr);
 % [muU, stdU, Y_te_1] = transformData(Y_te_0, I_te, Y_tr_0, I_tr);
 
- [lambda, muU, stdU, Y_tr_1] = transformData2(Y_tr_0, I_tr, Y_tr_0, I_tr);
- [lambda, muU, stdU, Y_te_1] = transformData2(Y_te_0, I_te, Y_tr_0, I_tr);
+% [lambda, muU, stdU, Y_tr_1] = transformData2(Y_tr_0, I_tr, Y_tr_0, I_tr);
+% [lambda, muU, stdU, Y_te_1] = transformData2(Y_te_0, I_te, Y_tr_0, I_tr);
 
 
  % Subtract baseline
-  [meanAll, meanU, meanI, Y_tr_2] = subtractBaseline(Y_tr_1, I_tr, Y_tr_1, I_tr);
-  [meanAll, meanU, meanI, Y_te_2] = subtractBaseline(Y_te_1, I_te, Y_tr_1, I_tr);
+  [meanAll, meanU, meanI, Y_tr_2] = subtractBaseline(Y_tr_0, I_tr, Y_tr_0, I_tr);
+  [meanAll, meanU, meanI, Y_te_2] = subtractBaseline(Y_te_0, I_te, Y_tr_0, I_tr);
  
  % Run algorithm
  % P_tr_2 = Y_tr_2; %sparse(size(Y_tr_2, 1), size(Y_tr_2, 2));
@@ -92,15 +78,15 @@ function [ TrainPredicted, TestPredicted ] = ...
 %  subplot(1,2,2); hist(Y_te_2(I_te), 100);
 %   
  % Add baseline
- P_tr_1 = addBaseline(meanAll, meanU, meanI, P_tr_2, I_tr);
- P_te_1 = addBaseline(meanAll, meanU, meanI, P_te_2, I_te);
+ P_tr_0 = addBaseline(meanAll, meanU, meanI, P_tr_2, I_tr);
+ P_te_0 = addBaseline(meanAll, meanU, meanI, P_te_2, I_te);
  
   % Detransform the data
  % P_tr_0 = DEtransformData(muU, stdU, P_tr_1, I_tr, Y_tr_0, I_tr);
  % P_te_0 = DEtransformData(muU, stdU, P_te_1, I_te, Y_tr_0, I_tr);
  
- P_tr_0 = DEtransformData2(lambda, muU, stdU, P_tr_1, I_tr, Y_tr_0, I_tr);
- P_te_0 = DEtransformData2(lambda, muU, stdU, P_te_1, I_te, Y_tr_0, I_tr);
+% P_tr_0 = DEtransformData2(lambda, muU, stdU, P_tr_1, I_tr, Y_tr_0, I_tr);
+% P_te_0 = DEtransformData2(lambda, muU, stdU, P_te_1, I_te, Y_tr_0, I_tr);
  
  
  % Return results
