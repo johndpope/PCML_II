@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Music recommendation problem-Andii}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Data Description-Andrii}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Models-Andrii}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Baseline-Andrii}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Matrix factorization techniques-Igor}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Neighbourhood-based methods-Andrii}{subsection.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Results}{section.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Parameter tuning}{subsection.2.3}% 9
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Methods comparison}{subsection.2.3}% 10
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Prediction quality}{subsection.2.3}% 11
+\BOOKMARK [1][-]{section.3}{Person detection problem}{}% 12
+\BOOKMARK [2][-]{subsection.3.1}{Data Description}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.2}{Data transformation}{section.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.1}{PCA-Andrii}{subsection.3.2}% 15
+\BOOKMARK [3][-]{subsubsection.3.2.2}{t-SNE-Andii}{subsection.3.2}% 16
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Fisher Vector}{subsection.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.3}{Classification models}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.4}{Results}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 20

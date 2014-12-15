@@ -1,0 +1,44 @@
+\begin{thebibliography}{PBMW99}
+
+\bibitem[BK07]{bell2007lessons}
+Robert~M Bell and Yehuda Koren.
+\newblock Lessons from the netflix prize challenge.
+\newblock {\em ACM SIGKDD Explorations Newsletter}, 9(2):75--79, 2007.
+
+\bibitem[JE10]{jamali2010matrix}
+Mohsen Jamali and Martin Ester.
+\newblock A matrix factorization technique with trust propagation for
+  recommendation in social networks.
+\newblock In {\em Proceedings of the fourth ACM conference on Recommender
+  systems}, pages 135--142. ACM, 2010.
+
+\bibitem[KCFH05]{krishnapuram2005sparse}
+Balaji Krishnapuram, Lawrence Carin, Mario~AT Figueiredo, and Alexander~J
+  Hartemink.
+\newblock Sparse multinomial logistic regression: Fast algorithms and
+  generalization bounds.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 27(6):957--968, 2005.
+
+\bibitem[PBMW99]{page1999pagerank}
+Lawrence Page, Sergey Brin, Rajeev Motwani, and Terry Winograd.
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock 1999.
+
+\bibitem[RRS11]{ricci2011introduction}
+Francesco Ricci, Lior Rokach, and Bracha Shapira.
+\newblock {\em Introduction to recommender systems handbook}.
+\newblock Springer, 2011.
+
+\bibitem[VdMH08]{van2008visualizing}
+Laurens Van~der Maaten and Geoffrey Hinton.
+\newblock Visualizing data using t-sne.
+\newblock {\em Journal of Machine Learning Research}, 9(2579-2605):85, 2008.
+
+\bibitem[ZWSP08]{zhou2008large}
+Yunhong Zhou, Dennis Wilkinson, Robert Schreiber, and Rong Pan.
+\newblock Large-scale parallel collaborative filtering for the netflix prize.
+\newblock In {\em Algorithmic Aspects in Information and Management}, pages
+  337--348. Springer, 2008.
+
+\end{thebibliography}
